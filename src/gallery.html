@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head-gallery.html', {
+"title": "ГАЛЕРЕЯ"
+})
+
+<body class="inner-page">
+    <div class="wrapper">
+        <!-- Header -->
+        @@include('./html/base/header.html')
+        <!-- end Header -->
+
+        <div class="top-panel">
+            <picture class="top-panel__img js-top-panel-parallax">
+                <img src="@img/swiper-356-1.69bd469d8840b16a476d6a20334faeff6.jpg.webp" alt="" srcset="@img/swiper-356-1.69bd469d8840b16a476d6a20334faeff6.jpg.webp 1920w 
+                             @img/swiper-356-1.69bd469d8840b16a476d6a20334faeff6.jpg.webp 1024w
+                             @img/swiper-356-1.9193297ca352a70b0e5d1b8791c539eb6.jpg 768w">
+            </picture>
+            
+            
+            <div class="top-panel__box container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+        
+                    <ol class="breadcrumbs__list"><li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li> <li class="breadcrumbs__item"><a href="galereya/" class="breadcrumbs__link active">Галерея</a></li></ol>  
+        
+                </nav>
+            </div>
+        </div>
+
+        <!-- main -->
+        <main class="main">
+
+            <div class="container">
+
+                <h1 class="section-title section-title--left">Галерея</h1>
+                <div class="text-block">
+                    <h6></h6>
+                </div>
+            
+            
+                <ul class="news-list">
+                    
+                    <li class="news-list__item">
+    <div class="text-box">
+        <a class="text-box__picture" href="galereya/fotogalerei/">
+            <div class="image-box image-box--t3">
+                <img src="@img/gallery1.683cf9dc7eaaefd13fca527e4c308f506.jpg.webp" alt="Фото" width="377" height="313" loading="lazy">
+            </div>
+        </a>
+        <h5 class="text-box__title">Фото</h5>
+    </div>
+</li>
+<li class="news-list__item">
+    <div class="text-box">
+        <a class="text-box__picture" href="galereya/realizovannyie-proektyi/">
+            <div class="image-box image-box--t3">
+                <img src="@img/gallery2.683cf9dc7eaaefd13fca527e4c308f506.jpg.webp" alt="3D - туры деревянных домов" width="377" height="313" loading="lazy">
+            </div>
+        </a>
+        <h5 class="text-box__title">3D - туры деревянных домов</h5>
+    </div>
+</li>
+<li class="news-list__item">
+    <div class="text-box">
+        <a class="text-box__picture" href="galereya/video/">
+            <div class="image-box image-box--t3">
+                <img src="@img/gallery3.683cf9dc7eaaefd13fca527e4c308f506.jpg.webp" alt="Видео" width="377" height="313" loading="lazy">
+            </div>
+        </a>
+        <h5 class="text-box__title">Видео</h5>
+    </div>
+</li>
+                </ul>
+            
+            </div>
+
+        </main>
+        <!-- end main -->
+        <!-- Footer -->
+        @@include('./html/base/footer.html')
+        <!-- end Footer -->
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#menu>.menu__item').find('.menu__submenu--lvl1').each(function () {
+                $(this).find('.menu__item').find('.menu__submenu--lvl1').addClass('menu__submenu--lvl2').removeClass('menu__submenu--lvl1');
+            });
+        });
+    </script>
+    <script defer src="js/global.min.js"></script>
+    <script src="js/rocket-loader.min.js" data-cf-settings="" defer=""></script>
+</body>
+
+</html>

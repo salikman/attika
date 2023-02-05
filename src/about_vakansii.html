@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head-about.html', {
+"title": "ВАКАНСИИ"
+})
+
+<body class="project-page">
+    <div class="wrapper">
+        <!-- Header -->
+        @@include('./html/base/header.html')
+        <!-- end Header -->
+
+        <div class="top-panel">
+            <picture class="top-panel__img js-top-panel-parallax">
+                <img src="@img/vacancii-xl.69bd469d8840b16a476d6a20334faeff26.jpg.webp" alt="" srcset="@img/vacancii-xl.69bd469d8840b16a476d6a20334faeff26.jpg.webp 1920w 
+                             @img/vacancii-xl.69bd469d8840b16a476d6a20334faeff26.jpg.webp 1024w
+                             @img/vacancii-xl.9193297ca352a70b0e5d1b8791c539eb26.jpg 768w">
+            </picture>
+
+
+            <div class="top-panel__box container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+                        <li class="breadcrumbs__item"><a href="about/" class="breadcrumbs__link">О нас</a></li>
+                        <li class="breadcrumbs__item"><a href="about/vakansii"
+                                class="breadcrumbs__link active">Вакансии</a></li>
+                    </ol>
+
+                </nav>
+            </div>
+        </div>
+
+        <!-- main -->
+        <main class="main">
+            <div class="container" style="margin-bottom: 50px;">
+
+                <h1 class="section-title section-title--left">Вакансии</h1>
+                <div class="text-block">
+                    <h6></h6>
+                    <p style="font-family: Arial, Helvetica, sans-serif; line-height: 1.5; color: black;">Цель нашей
+                        компании — строить лучшие дома: точно и красочно воплощать то, что хочет видеть наш клиент. Для
+                        этого нам нужны умные, целеустремленные и талантливые люди.</p>
+                    <p><strong style="color: black;">На данный момент нам нужны:<br></strong></p>
+                    <ul>
+                        <li><strong style="color: black;">Менеджер по продажам<br></strong></li>
+                        <li><strong style="color: black;">Архитектор<br></strong></li>
+                        <li><strong style="color: black;">Инженер-конструктор деревянной части<br></strong></li>
+                    </ul>
+                    <p style="color: black;">Направьте Ваше резюме и мы свяжемся с Вами:<strong>
+                            hr@attika.ua<br></strong></p>
+                    <pre class="justifyleft"
+                        style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #97ca34; padding-right: 15%; padding-left: 15%;"><strong>&nbsp;</strong></pre>
+                </div>
+                <div class="section__btn container" style="padding-bottom: 50px;">
+                    <a class="btn" href="proektyi/">Выбрать проект дома</a>
+                    <a class="btn btn--green" href="galereya/">Cмотреть галерею</a>
+                </div>
+
+            </div>
+        </main>
+        <!-- end main -->
+        <!-- Footer -->
+        @@include('./html/base/footer.html')
+        <!-- end Footer -->
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#menu>.menu__item').find('.menu__submenu--lvl1').each(function () {
+                $(this).find('.menu__item').find('.menu__submenu--lvl1').addClass('menu__submenu--lvl2').removeClass('menu__submenu--lvl1');
+            });
+        });
+    </script>
+    <script defer src="js/global.min.js"></script>
+    <script defer src="/js/swiper.min.js"></script>
+    <script defer src="/js/rellax.min.js"></script>
+    <script src="js/rocket-loader.min.js" data-cf-settings="" defer=""></script>
+</body>
+
+</html>

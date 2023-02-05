@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head-services.html', {
+"title": "ПРОЕКТИРОВАНИЕ ДОМОВ"
+})
+
+<body class="inner-page">
+    <div class="wrapper">
+        <!-- Header -->
+        @@include('./html/base/header.html')
+        <!-- end Header -->
+
+        <div class="top-panel">
+            <picture class="top-panel__img js-top-panel-parallax">
+                <img src="@img/proectirovanie-xl.69bd469d8840b16a476d6a20334faeff43.jpg.webp"
+                    alt="Проектирование домов из клееного бруса от компании Аттика" srcset="@img/proectirovanie-xl.69bd469d8840b16a476d6a20334faeff43.jpg.webp 1920w 
+                             @img/proectirovanie-xl.69bd469d8840b16a476d6a20334faeff43.jpg.webp 1024w
+                             @img/proectirovanie-xl.9193297ca352a70b0e5d1b8791c539eb43.jpg 768w">
+            </picture>
+
+
+            <div class="top-panel__box container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+                        <li class="breadcrumbs__item"><a href="uslugi/" class="breadcrumbs__link">Услуги</a></li>
+                        <li class="breadcrumbs__item"><a href="uslugi/proektirovanie/"
+                                class="breadcrumbs__link active">Проектирование домов</a></li>
+                    </ol>
+
+                </nav>
+            </div>
+        </div>
+
+        <!-- main -->
+        <main class="main">
+
+            <div class="container">
+
+                <h1 class="section-title section-title--left">Проектирование домов</h1>
+                <div class="text-block">
+                    <h6>Проектирование домов из клееного бруса от компании Аттика</h6>
+
+
+                </div>
+                <ul class="services-blocks tiles">
+                    <!--<h2 class="services-blocks__title">Эскизное проектирование</h2>-->
+                    <a href="uslugi/proektirovanie/eskiznoe-proektirovanie" class="services-blocks__item">
+                        <div class="services-blocks__content">
+                            <h3 class="services-blocks__longtitle">Эскизное проектирование
+                                <!---->
+                            </h3>
+                            <!--<p class="services-blocks__description">Эскизный проект деревянного дома дает возможность заказчику выбрать варианты архитектурного решения будущего дома. Наши архитекторы разрабатывают трехмерную модель, чтобы Вы смогли детально представлять себе будущий внешний вид Вашего дома.</p>
+        <a href="uslugi/proektirovanie/eskiznoe-proektirovanie" class="services-blocks__btn btn">Подробнее</a>
+        -->
+                            <nav class="innerServices">
+
+                            </nav>
+                        </div>
+                        <div class="services-blocks__img">
+                            <img src="@img/eskiznoe-proektirovanie-m.52d20d9ed46af51d383e113bb4c98d6743.jpg.webp"
+                                alt="" width="590" height="350" loading="lazy">
+                        </div>
+                    </a>
+                    <!--<h2 class="services-blocks__title">Рабочий проект</h2>-->
+                    <a href="uslugi/proektirovanie/robochij-proekt" class="services-blocks__item">
+                        <div class="services-blocks__content">
+                            <h3 class="services-blocks__longtitle">Рабочий проект
+                                <!---->
+                            </h3>
+                            <!--<p class="services-blocks__description">Рабочий проект деревянного дома разрабатывают на основе эскизного проекта. Рабочая документация содержит детальные планы строительства деревянного дома и содержит архитектурно-строительный,  конструкторский и инженерный разделы.</p>
+        <a href="uslugi/proektirovanie/robochij-proekt" class="services-blocks__btn btn">Подробнее</a>
+        -->
+                            <nav class="innerServices">
+
+                            </nav>
+                        </div>
+                        <div class="services-blocks__img">
+                            <img src="@img/work_draft.52d20d9ed46af51d383e113bb4c98d6743.jpg.webp"
+                                alt="" width="590" height="350" loading="lazy">
+                        </div>
+                    </a>
+                    <div class="section__btn container">
+                        <a class="btn" href="proektyi/">Выбрать проект дома</a>
+                        <a class="btn btn--green" href="galereya/">Cмотреть галерею</a>
+                    </div>
+
+                </ul>
+            </div>
+
+        </main>
+        <!-- end main -->
+        <!-- Footer -->
+        @@include('./html/base/footer.html')
+        <!-- end Footer -->
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#menu>.menu__item').find('.menu__submenu--lvl1').each(function () {
+                $(this).find('.menu__item').find('.menu__submenu--lvl1').addClass('menu__submenu--lvl2').removeClass('menu__submenu--lvl1');
+            });
+        });
+    </script>
+    <script defer src="js/global.min.js"></script>
+    <script src="js/rocket-loader.min.js" data-cf-settings="" defer=""></script>
+</body>
+
+</html>

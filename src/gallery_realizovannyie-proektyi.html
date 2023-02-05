@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head-gallery.html', {
+"title": "3D - ТУРЫ ДЕРЕВЯННЫХ ДОМОВ"
+})
+
+<body class="inner-page">
+    <div class="wrapper">
+        <!-- Header -->
+        @@include('./html/base/header.html')
+        <!-- end Header -->
+
+        <div class="top-panel">
+            <picture class="top-panel__img js-top-panel-parallax">
+                <img src="@img/attika55-xl.69bd469d8840b16a476d6a20334faeff69.jpg.webp" alt="" srcset="@img/attika55-xl.69bd469d8840b16a476d6a20334faeff69.jpg.webp 1920w 
+                             @img/attika55-xl.69bd469d8840b16a476d6a20334faeff69.jpg.webp 1024w
+                             @img/attika55-xl.9193297ca352a70b0e5d1b8791c539eb69.jpg 768w">
+            </picture>
+
+
+            <div class="top-panel__box container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+                        <li class="breadcrumbs__item"><a href="galereya/" class="breadcrumbs__link">Галерея</a></li>
+                        <li class="breadcrumbs__item"><a href="galereya/realizovannyie-proektyi/"
+                                class="breadcrumbs__link active">3D - туры деревянных домов</a></li>
+                    </ol>
+
+                </nav>
+            </div>
+        </div>
+
+        <!-- main -->
+        <main class="main">
+
+            <div class="container">
+
+                <h1 class="section-title section-title--left">3D - туры деревянных домов</h1>
+                <div class="text-block">
+                    <h6></h6>
+                </div>
+
+
+                <ul class="news-list">
+
+                    <li class="news-list__item">
+                        <div class="text-box">
+
+                            <a class="text-box__picture" target="_blank"
+                                href="galereya/realizovannyie-proektyi/3d-tur-№1">
+                                <div class="image-box image-box--t3">
+                                    <img src="@img/slide-11-360.jpg.webp" alt="1" loading="lazy">
+                                </div>
+                            </a>
+
+                            <h5 class="text-box__title">3D-тур №1</h5>
+                        </div>
+                    </li>
+
+                    <!-- data-fancybox="gallery" data-caption="" -->
+                    <li class="news-list__item">
+                        <div class="text-box">
+
+                            <a class="text-box__picture" target="_blank"
+                                href="galereya/realizovannyie-proektyi/3d-tur-№2">
+                                <div class="image-box image-box--t3">
+                                    <img src="@img/slide-2-360.jpg.webp" alt="2" loading="lazy">
+                                </div>
+                            </a>
+
+                            <h5 class="text-box__title">ЗД-тур №2</h5>
+                        </div>
+                    </li>
+
+                    <!-- data-fancybox="gallery" data-caption="" -->
+                    <li class="news-list__item">
+                        <div class="text-box">
+
+                            <a class="text-box__picture" target="_blank"
+                                href="galereya/realizovannyie-proektyi/3d-tur-№3">
+                                <div class="image-box image-box--t3">
+                                    <img src="@img/slide-3-360.jpg.webp" alt="3" loading="lazy">
+                                </div>
+                            </a>
+
+                            <h5 class="text-box__title">3Д-тур №3</h5>
+                        </div>
+                    </li>
+
+                    <!-- data-fancybox="gallery" data-caption="" -->
+                </ul>
+
+            </div>
+
+        </main>
+        <!-- end main -->
+        <!-- Footer -->
+        @@include('./html/base/footer.html')
+        <!-- end Footer -->
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#menu>.menu__item').find('.menu__submenu--lvl1').each(function () {
+                $(this).find('.menu__item').find('.menu__submenu--lvl1').addClass('menu__submenu--lvl2').removeClass('menu__submenu--lvl1');
+            });
+        });
+    </script>
+    <script defer src="js/global.min.js"></script>
+    <script src="js/rocket-loader.min.js" data-cf-settings="" defer=""></script>
+</body>
+
+</html>

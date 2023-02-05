@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head-about.html', {
+"title": "О НАС"
+})
+
+<body class="project-page">
+    <div class="wrapper">
+        <!-- Header -->
+        @@include('./html/base/header.html')
+        <!-- end Header -->
+
+        <div class="top-panel">
+            <picture class="top-panel__img js-top-panel-parallax">
+                <img src="@img/1_22.69bd469d8840b16a476d6a20334faeff287.jpg.webp"
+                    alt="Строительство современных деревянных домов " srcset="@img/1_22.69bd469d8840b16a476d6a20334faeff287.jpg.webp 1920w 
+                             @img/1_22.69bd469d8840b16a476d6a20334faeff287.jpg.webp 1024w
+                             @img/1_22.9193297ca352a70b0e5d1b8791c539eb287.jpg 768w">
+            </picture>
+        </div>
+
+        <!-- main -->
+        <main class="main upblock">
+
+            <div class="container" style="margin-bottom: 50px;">
+                <!-- BreadCrumbs -->
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                    <li class="breadcrumb-item active">О нас</li>
+                </ol>
+
+                <h1 class="section-title section-title--left">О нас</h1>
+                <div class="text-block">
+                    <h6>Строительство современных деревянных домов </h6>
+                    <p>С 1998 года мы строим&nbsp;<br><span class="text-block__up"><strong>деревянные
+                                дома</strong></span><br> по финской технологии:</p>
+                    <ul>
+                        <li><a href="uslugi/proektirovanie/">Архитектурное бюро</a></li>
+                        <li><a href="uslugi/proizvodstvo-brusa/">Производство клееного бруса</a></li>
+                        <li><a href="uslugi/stroitelstvo/">Строительство домов и обслуживание</a></li>
+                    </ul>
+                    <p>&nbsp;</p>
+                    <p class="justifyfull"
+                        style="font-family: Arial, Helvetica, sans-serif; line-height: 1.5; color: black;">Компания
+                        АТТИКА - украинский производитель деревянных домов. Мы обеспечиваем полный комплекс строительных
+                        услуг, начиная с разработки индивидуальных проектов и заканчивая отделкой наших проектов на
+                        высоком профессиональном уровне. Основное направление работы компании - строительство
+                        современных деревянных домов из клееного бруса. Мы изготавливаем и строим под ключ дома для
+                        постоянного проживания, дачные и гостевые дома, деревянные бани и спа-комплексы, а также садовые
+                        домики, беседки, навесы.</p>
+                    <p class="justifyfull"
+                        style="font-family: Arial, Helvetica, sans-serif; line-height: 1.5; color: black;">Наша компания
+                        работает на рынке с 1998 года. За годы работы, с предприятия по производству столярных изделий
+                        мы выросли в компанию, занимает ведущие позиции в области деревообработки Украины. Сегодня
+                        АТТИКА - это собственное проектное бюро, крупное производство деревянного бруса и сильная
+                        сплоченная команда, в составе которой лучшие архитекторы, инженеры и строители.</p>
+                    <p class="justifyfull"
+                        style="font-family: Arial, Helvetica, sans-serif; line-height: 1.5; color: black;">Продукция
+                        успела получить признание не только в Украине, но и за ее пределами. По проектам, разработанным
+                        архитекторами АТТИКА, построено более 500 домов. Нашей столярной продукцией укомплектованы отели
+                        «Премьер-палас» и «Днепр», Верховный суд и Администрация Президента, КГА и другие учреждения.
+                    </p>
+                    <p class="justifyfull"
+                        style="font-family: Arial, Helvetica, sans-serif; line-height: 1.5; color: black;">Мы прилагаем
+                        немало усилий для того, чтобы каждый клиент нашей компании получал максимальную пользу от
+                        сотрудничества с нами. Чтобы все представления о функциональности, высокого качества и комфорт
+                        не оставались пустыми обещаниями на бумаге, а воплотились в реальные изделия.</p>
+                    <p style="font-family: Arial, Helvetica, sans-serif; line-height: 1.5; color: black;">Более
+                        подробную информацию вы можете найти в следующих разделах на нашем сайте:</p>
+                    <ul>
+                        <li><a href="about/o-kompanii">О&nbsp;компании в цифрах</a></li>
+                        <li><a href="about/sobstvennoe-proizvodstvo">Наше производство</a></li>
+                        <li><a href="about/partneram">Информация партнерам</a></li>
+                        <li><a href="about/vakansii">Вакансии</a></li>
+                        <li><a href="pdf/1-presentation-attika-ru.pdf">Презентация компании</a></li>
+                        <li><a href="about/advantages">Преимущества сотрудничества</a></li>
+                    </ul>
+                </div>
+                <div class="section__btn container" style="padding-bottom: 50px;">
+                    <a class="btn" href="proektyi/">Выбрать проект дома</a>
+                    <a class="btn btn--green" href="galereya/">Cмотреть галерею</a>
+                </div>
+
+            </div>
+
+        </main>
+        <!-- end main -->
+        <!-- Footer -->
+        @@include('./html/base/footer.html')
+        <!-- end Footer -->
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#menu>.menu__item').find('.menu__submenu--lvl1').each(function () {
+                $(this).find('.menu__item').find('.menu__submenu--lvl1').addClass('menu__submenu--lvl2').removeClass('menu__submenu--lvl1');
+            });
+        });
+    </script>
+    <script defer src="js/global.min.js"></script>
+    <script src="js/rocket-loader.min.js" data-cf-settings="" defer=""></script>
+</body>
+
+</html>

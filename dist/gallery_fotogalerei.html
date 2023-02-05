@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/page.css?_v=20230205190007">
+    <title>ФОТО</title>
+</head>
+
+<body class="inner-page">
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header" id="header">
+    <div class="container top">
+
+        <div class="dropdown wrapper contacts">
+            <picture><source srcset="img/phone-dark.webp" type="image/webp"><img class="phone fixed-show md-hide" src="img/phone-dark.webp" width="30" height="30"></picture>
+            <picture><source srcset="img/phone-green.webp" type="image/webp"><img class="phone phone-small" src="img/phone-green.webp" width="30" height="30"></picture>
+            <a href="tel:+380680110144" class="ph-phone1">+38 (068) 011-01-44</a>
+
+            <div class="dropdown">
+                <a class="list-contacts__link" href="tel:+380680110144">+38 (068) 011-01-44</a>
+
+                <p class="list-contacts__title">Адрес:</p>
+                <p class="list-contacts__street">г. Киев, ул. Радистов, 34В</p>
+
+                <p class="list-contacts__title">E-Mail:</p>
+                <a class="list-contacts__mail" href="mailto:sale@attika.ua">sale@attika.ua</a><br>
+                <span>(отдел продаж)</span><br><br>
+                <a class="list-contacts__mail" href="mailto:marketing@attika.ua ">marketing@attika.ua </a><br>
+                <span>(отдел маркетинга)</span><br><br>
+                <a class="list-contacts__mail" href="mailto:snabjenie@attika.ua">snabjenie@attika.ua</a><br>
+                <span>(отдел снабжения)</span>
+
+                <p class="list-contacts__title">График работы:</p>
+                <p class="list-contacts__street">Пн-Пт: 9:00 – 19:00 - на час війни за погодженням</p>
+                <p class="list-contacts__street">Сб: 11:00 – 17:00</p>
+            </div>
+        </div>
+
+        <div class="languages">
+            <a class="languages__link languages__link--active" href="https://attika.ua/">ru</a>
+            <a class="languages__link " href="https://attika.ua/ua/">ua</a>
+        </div>
+
+        <ul class="menu header__subnav">
+            <li class="menu__item">
+                <a class="menu__link menu__link--sm" href="poisk">
+                    <picture><source srcset="img/search.webp" type="image/webp"><img src="img/search.webp" class="fixed-hide" title="Поиск" width="30" height="30"></picture>
+
+                    <picture><source srcset="img/search-dark.webp" type="image/webp"><img src="img/search-dark.webp" class="fixed-show" title="Поиск" width="30" height="30"></picture>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link menu__link--sm" href="vopros-otvet">
+                    <picture><source srcset="img/question.webp" type="image/webp"><img src="img/question.webp" class="fixed-hide" title="Вопрос-ответ" width="30" height="30"></picture>
+
+                    <img src="img/question-dark.webp" class="fixed-show" title="Вопрос-ответ" width="30"
+                        height="30">
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link menu__link--sm" href="otzyivyi">
+                    <picture><source srcset="img/review.webp" type="image/webp"><img src="img/review.webp" class="fixed-hide" title="Отзывы" width="30" height="30"></picture>
+
+                    <picture><source srcset="img/review-dark.webp" type="image/webp"><img src="img/review-dark.webp" class="fixed-show" title="Отзывы" width="30" height="30"></picture>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="container body">
+        <a class="logo" href="https://attika.ua/">
+            <img class="logo__img logo__img--lg" src="img/logo-dark-ru.webp" width="269" height="72"
+                alt="Деревянные дома из клееного бруса – АТТИКА | Строительство деревянных домов под ключ в Киеве и Украине"
+                loading="lazy">
+            <img class="logo__img logo__img--xs" src="img/logo--xs.webp" width="55" height="50"
+                alt="Деревянные дома из клееного бруса – АТТИКА | Строительство деревянных домов под ключ в Киеве и Украине"
+                loading="lazy">
+        </a>
+
+        <div class="nav-mobile" id="navMobile">
+            <nav class="header__nav">
+                <!-- Menu -->
+                <ul class="menu" id="menu">
+                    <li class="menu__item"><a class="menu__link" href="proektyi/">Проекты</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link menu__link--has-submenu" href="texnologii/">Технологии</a>
+                        <ul class="menu__submenu menu__submenu--lvl1" role="menu">
+                            <li class="menu__item"><a class="menu__link" href="texnologii/doma-iz-kleenogo-brusa"
+                                   >Дома из клееного бруса</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="texnologii/faxverkovyie-doma"
+                                   >Фахверковые дома</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="texnologii/doma-po-karkasnoj-texnologii"
+                                   >Дома по каркасной технологии</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link menu__link--has-submenu" href="uslugi/">Услуги</a>
+                        <ul class="menu__submenu menu__submenu--lvl1" role="menu">
+                            <li class="menu__item"><a class="menu__link" href="uslugi/proektirovanie/"
+                                   >Проектирование домов</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="uslugi/stroitelstvo/"
+                                   >Строительство домов</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="uslugi/proizvodstvo-brusa/"
+                                   >Производство бруса</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="uslugi/izgotovlenie/"
+                                   >Изготовление столярных изделий</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link menu__link--has-submenu" href="galereya/">Галерея</a>
+                        <ul class="menu__submenu menu__submenu--lvl1" role="menu">
+                            <li class="menu__item"><a class="menu__link" href="galereya/fotogalerei/"
+                                   >Фото</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="galereya/realizovannyie-proektyi/"
+                                   >3D -
+                                    туры</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="galereya/video/"
+                                   >Видео</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="novosti-kompanii/">Блог</a></li>
+                    <li class="menu__item"><a class="menu__link menu__link--has-submenu" href="about/">О нас</a>
+                        <ul class="menu__submenu menu__submenu--lvl1" role="menu">
+                            <li class="menu__item"><a class="menu__link" href="about/o-kompanii">О
+                                    компании</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="about/sobstvennoe-proizvodstvo"
+                                   >Наше производство</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="about/partneram"
+                                   >Партнерам</a></li>
+                            <li class="menu__item"><a class="menu__link" href="pdf/1-presentation-attika-ru.pdf"
+                                    target="_blank">Презентация</a></li>
+                            <li class="menu__item"><a class="menu__link" href="about/vakansii"
+                                   >Вакансии</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="about/advantages"
+                                   >Преимущества</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="kontaktyi">Контакты</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="kalkulyator/">Калькулятор</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sub-menu fixed-show">
+            <div class="languages">
+                <a class="languages__link languages__link--active" href="https://attika.ua/">ru</a>
+                <a class="languages__link " href="https://attika.ua/ua/">ua</a>
+            </div>
+
+            <div class="dropdown wrapper contacts">
+                <picture><source srcset="img/phone-dark.webp" type="image/webp"><img class="phone fixed-show md-hide" src="img/phone-dark.webp" width="30" height="30"></picture>
+                <picture><source srcset="img/phone-green.webp" type="image/webp"><img class="phone phone-small" src="img/phone-green.webp" width="30" height="30"></picture>
+                <a href="tel:+380680110144" class="ph-phone1">+38 (068) 011-01-44</a>
+
+                <div class="dropdown">
+                    <a class="list-contacts__link" href="tel:+380680110144">+38 (068) 011-01-44</a>
+                    <p class="list-contacts__title">Адрес:</p>
+                    <p class="list-contacts__street">г. Киев, ул. Радистов, 34В</p>
+                    <p class="list-contacts__title">E-Mail:</p>
+                    <a class="list-contacts__mail" href="mailto:sale@attika.ua">sale@attika.ua</a><br>
+                    <span>(отдел продаж)</span><br><br>
+                    <a class="list-contacts__mail" href="mailto:marketing@attika.ua ">marketing@attika.ua</a><br>
+                    <span>(отдел маркетинга)</span><br><br>
+                    <a class="list-contacts__mail" href="mailto:snabjenie@attika.ua">snabjenie@attika.ua</a><br>
+                    <span>(отдел снабжения)</span>
+                    <p class="list-contacts__title">График работы:</p>
+                    <p class="list-contacts__street">Пн-Пт: 9:00 – 19:00 - на час війни за погодженням</p>
+                    <p class="list-contacts__street">Сб: 11:00 – 17:00</p>
+                </div>
+            </div>
+
+            <ul class="menu header__subnav">
+                <li class="menu__item">
+                    <a class="menu__link menu__link--sm" href="poisk">
+                        <picture><source srcset="img/search.webp" type="image/webp"><img src="img/search.webp" class="fixed-hide" title="Поиск" width="30" height="30"></picture>
+                        <picture><source srcset="img/search-dark.webp" type="image/webp"><img src="img/search-dark.webp" class="fixed-show" title="Поиск" width="30" height="30"></picture>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--sm" href="vopros-otvet">
+                        <picture><source srcset="img/question.webp" type="image/webp"><img src="img/question.webp" class="fixed-hide" title="Вопрос-ответ" width="30" height="30"></picture>
+                        <picture><source srcset="img/question-dark.webp" type="image/webp"><img src="img/question-dark.webp" class="fixed-show" title="Вопрос-ответ" width="30" height="30"></picture>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--sm" href="otzyivyi">
+                        <picture><source srcset="img/review.webp" type="image/webp"><img src="img/review.webp" class="fixed-hide" title="Отзывы" width="30" height="30"></picture>
+                        <picture><source srcset="img/review-dark.webp" type="image/webp"><img src="img/review-dark.webp" class="fixed-show" title="Отзывы" width="30" height="30"></picture>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header__mobile-btn">
+            <button class="hamburger" id="navMobileBtn" aria-haspopup="true" aria-expanded="true">
+                <span class="hamburger__box"><span class="hamburger__inner"></span></span>
+                <span class="visually-hidden">Меню</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container search">
+        <form action="/poisk" method="GET">
+            <picture><source srcset="img/search-dark.webp" type="image/webp"><img src="img/search-dark.webp" style="display:none;"></picture>
+            <input type="text" name="search" placeholder="Поиск по сайту">
+            <img src="img/close.svg" style="display:none;" class="close">
+        </form>
+    </div>
+</header>
+        <!-- end Header -->
+
+        <div class="top-panel">
+            <picture class="top-panel__img js-top-panel-parallax">
+                <img src="img/shablon-shapka2-135.69bd469d8840b16a476d6a20334faeff58.jpg.webp"
+                    alt="Смотреть галерею реализованных проектов и изделий компании" srcset="img/shablon-shapka2-135.69bd469d8840b16a476d6a20334faeff58.jpg.webp 1920w 
+                             img/shablon-shapka2-135.69bd469d8840b16a476d6a20334faeff58.jpg.webp 1024w
+                             img/shablon-shapka2-135.9193297ca352a70b0e5d1b8791c539eb58.jpg 768w">
+            </picture>
+
+
+            <div class="top-panel__box container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+                        <li class="breadcrumbs__item"><a href="galereya/" class="breadcrumbs__link">Галерея</a></li>
+                        <li class="breadcrumbs__item"><a href="galereya/fotogalerei/"
+                                class="breadcrumbs__link active">Фото</a></li>
+                    </ol>
+
+                </nav>
+            </div>
+        </div>
+
+        <!-- main -->
+        <main class="main">
+
+            <div class="container">
+
+                <h1 class="section-title section-title--left">Фото</h1>
+                <div class="text-block">
+                    <h6>Смотреть галерею реализованных проектов и изделий компании</h6>
+                </div>
+
+
+                <ul class="news-list">
+
+                    <li class="news-list__item">
+                        <div class="text-box">
+                            <a class="text-box__picture" href="galereya/fotogalerei/realizovannyie-proektyi/">
+                                <div class="image-box image-box--t3">
+                                    <img src="img/356-5-c.683cf9dc7eaaefd13fca527e4c308f5058.jpg.webp" width="377"
+                                        height="313" alt="Реализованные проекты" loading="lazy">
+                                </div>
+                                <span class="text-box__label">17 альбомов</span>
+                            </a>
+                            <h5 class="text-box__title">Реализованные проекты</h5>
+                        </div>
+                    </li>
+                    <li class="news-list__item">
+                        <div class="text-box">
+                            <a class="text-box__picture" href="galereya/fotogalerei/other">
+                                <div class="image-box image-box--t3">
+                                    <img src="img/2021-12-20-3.7fb96c1b86e05e143fe3e9021fff43de58.jpeg.webp"
+                                        width="377" height="313" alt="Наши дома" loading="lazy">
+                                </div>
+                                <span class="text-box__label">Разное</span>
+                            </a>
+                            <h5 class="text-box__title">Наши дома</h5>
+                        </div>
+                    </li>
+                    <li class="news-list__item">
+                        <div class="text-box">
+                            <a class="text-box__picture"
+                                href="galereya/fotogalerei/dizajn-interera-derevyannyix-domov/">
+                                <div class="image-box image-box--t3">
+                                    <img src="img/IMG_5207_h.683cf9dc7eaaefd13fca527e4c308f5058.jpg.webp" width="377"
+                                        height="313" alt="Дизайн интерьера деревянных домов" loading="lazy">
+                                </div>
+                                <span class="text-box__label">2 альбома</span>
+                            </a>
+                            <h5 class="text-box__title">Дизайн интерьера деревянных домов</h5>
+                        </div>
+                    </li>
+                    <li class="news-list__item">
+                        <div class="text-box">
+                            <a class="text-box__picture" href="galereya/fotogalerei/derevyannyie-dveri/">
+                                <div class="image-box image-box--t3">
+                                    <img src="img/albom-dveri.683cf9dc7eaaefd13fca527e4c308f5058.jpg.webp" width="377"
+                                        height="313" alt="Фото деревянных дверей" loading="lazy">
+                                </div>
+                                <span class="text-box__label">2 альбома</span>
+                            </a>
+                            <h5 class="text-box__title">Фото деревянных дверей</h5>
+                        </div>
+                    </li>
+                    <li class="news-list__item">
+                        <div class="text-box">
+                            <a class="text-box__picture" href="galereya/fotogalerei/derevyannyie-okna">
+                                <div class="image-box image-box--t3">
+                                    <img src="img/albom-okna.683cf9dc7eaaefd13fca527e4c308f5058.jpg.webp" width="377"
+                                        height="313" alt="Фото деревянных окон" loading="lazy">
+                                </div>
+                                <span class="text-box__label">1 альбом</span>
+                            </a>
+                            <h5 class="text-box__title">Фото деревянных окон</h5>
+                        </div>
+                    </li>
+                    <li class="news-list__item">
+                        <div class="text-box">
+                            <a class="text-box__picture" href="galereya/fotogalerei/derevyannyie-lestniczyi">
+                                <div class="image-box image-box--t3">
+                                    <img src="img/albom-lestnitsu.683cf9dc7eaaefd13fca527e4c308f5058.jpg.webp"
+                                        width="377" height="313" alt="Фото деревянных лестниц" loading="lazy">
+                                </div>
+                                <span class="text-box__label">1 альбом</span>
+                            </a>
+                            <h5 class="text-box__title">Фото деревянных лестниц</h5>
+                        </div>
+                    </li>
+                    <li class="news-list__item">
+                        <div class="text-box">
+                            <a class="text-box__picture" href="galereya/fotogalerei/derevyannyie-kabinetyi">
+                                <div class="image-box image-box--t3">
+                                    <img src="img/albom-abinetu.683cf9dc7eaaefd13fca527e4c308f5058.jpg.webp"
+                                        width="377" height="313" alt="Фото деревянных кабинетов" loading="lazy">
+                                </div>
+                                <span class="text-box__label">1 альбом</span>
+                            </a>
+                            <h5 class="text-box__title">Фото деревянных кабинетов</h5>
+                        </div>
+                    </li>
+                    <li class="news-list__item">
+                        <div class="text-box">
+                            <a class="text-box__picture"
+                                href="galereya/fotogalerei/xudozhestvennaya-rezba-po-derevu-v-interere">
+                                <div class="image-box image-box--t3">
+                                    <img src="img/albom-hud-rezba-po-derevy.683cf9dc7eaaefd13fca527e4c308f5058.jpg.webp"
+                                        width="377" height="313" alt="Художественная резьба по дереву в интерьере"
+                                        loading="lazy">
+                                </div>
+                                <span class="text-box__label">1 альбом</span>
+                            </a>
+                            <h5 class="text-box__title">Художественная резьба по дереву в интерьере</h5>
+                        </div>
+                    </li>
+                    <li class="news-list__item">
+                        <div class="text-box">
+                            <a class="text-box__picture" href="galereya/fotogalerei/diplomy-i-sertifikaty">
+                                <div class="image-box image-box--t3">
+                                    <img src="img/dokumenty-i-sertifikaty.683cf9dc7eaaefd13fca527e4c308f5058.jpg.webp"
+                                        width="377" height="313" alt="Дипломы и сертификаты" loading="lazy">
+                                </div>
+                                <span class="text-box__label"></span>
+                            </a>
+                            <h5 class="text-box__title">Дипломы и сертификаты</h5>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </main>
+        <!-- end main -->
+        <!-- Footer -->
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__box row">
+            <div class="footer__col footer__col--about col-xs-12 col-lg-3">
+                <img class="footer__logo" src="/img/logo.png.webp" width="194" height="51"
+                    alt="Деревянные дома из клееного бруса – АТТИКА | Строительство деревянных домов под ключ в Киеве и Украине"
+                    loading="lazy">
+                <div class="footer__about">
+                    <p class="justifyfull">АТТИКА - это строительная компания с полным циклом производства
+                        домов. Мы являемся одним из самых больших производителей бруса, а также имеем в своём
+                        составе собственное архитектурное бюро.</p>
+                    <p class="justifyfull">Мы придерживаемся тенденций современной архитектуры, поддерживаем её
+                        развитие и заботимся об экологии в производстве и реализации наших проектов.</p>
+                </div>
+            </div>
+            <div class="footer__col footer__col--catalog col-xs-12 col-tb-6 col-lp-4 col-lg-3">
+                <h6 class="footer-heading">Каталог проектов</h6>
+                <ul class="footer-list" id="footer-menu-1">
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="proektyi/derevyannyie-kottedzhi/">
+                            Деревянные коттеджи
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="proektyi/doma-iz-kleenogo-brusa/">
+                            Дома из клееного бруса
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="proektyi/dachnyie-doma/">
+                            Дачные дома
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="proektyi/derevyannyie-bani/">
+                            Деревянные бани
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="proektyi/sadovyie-domiki,-besedki/">
+                            Садовые домики, беседки
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="proektyi/kommercheskie-proektyi/">
+                            Коммерческие проекты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--company col-xs-12 col-tb-6 col-lp-4 col-lg-3">
+                <h6 class="footer-heading">О компании</h6>
+                <ul class="footer-list" id="footer-menu-2">
+                    <li class="footer-list__item"><a class="footer-list__link" href="about/o-kompanii">О
+                            компании</a></li>
+
+                    <li class="footer-list__item"><a class="footer-list__link"
+                            href="about/sobstvennoe-proizvodstvo">Наше производство</a></li>
+
+                    <li class="footer-list__item"><a class="footer-list__link" href="about/partneram">Партнерам</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="pdf/1-presentation-attika-ru.pdf"
+                            target="_blank">Презентация</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="about/vakansii">Вакансии</a></li>
+
+                    <li class="footer-list__item"><a class="footer-list__link" href="about/advantages">Преимущества</a>
+                    </li>
+                </ul>
+                <ul class="footer-list" id="footer-menu-2">
+                    <li class="footer-list__item"><a class="footer-list__link" href="privacy">Конфиденциальность</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--contact col-xs-12 col-lp-4 col-lg-3">
+                <h6 class="footer-heading">Контакты</h6>
+                <div class="contact">
+                    <div class="contact__box">
+                        <!--  <a class="contact__link" href="tel:+38 (044) 369 36 00">+38 (044) 369 36 00</a> <a class="contact__link" href="tel:+38 (073) 369 36 00">+38 (073) 369 36 00</a> -->
+                        <!-- <a class="contact__link ph-phone1" href="tel:+380733693600">+38 (073) 369-36-00</a> -->
+                        <!-- <a class="contact__link" href="tel:+380443693600">+38 (044) 369-36-00</a> -->
+                        <a class="contact__link" href="tel:+380680110144">+38 (068) 011-01-44</a>
+                        <a class="contact__link" style="text-decoration:underline"
+                            href="mailto:sale@attika.ua">sale@attika.ua</a>
+                    </div>
+                    <p style="font-size: 1em; color: #cfe828; margin-bottom: -5px;">ОТДЕЛ ПРОДАЖ&nbsp;</p>
+                    <p style="font-size: 12px; color: #fff; margin-bottom: 0px;">г. Киев,</p>
+                    <p style="font-size: 12px; margin-top: 0px;">ул. Радистов, 34В&nbsp;&nbsp;<br> заезд со
+                        стороны ул. Исы Мунаева&nbsp;</p>
+                    <p style="font-size: 1em; color: #cfe828; margin-bottom: -5px;">ПРОИЗВОДСТВО</p>
+                    <p style="font-size: 12px; color: #fff; margin-bottom: 0px;">г. Иванков, Киевская область,
+                    </p>
+                    <p style="font-size: 12px; margin-top: 0px;">ул. Михайловская 12Б</p>
+                </div>
+            </div>
+            <div class="footer__col footer__col--social col-xs-12 col-lp-4 col-lg-3">
+                <!-- social -->
+                <ul class="social">
+                    <!-- facebook -->
+                    <li class="social__item">
+                        <a class="social__link" rel="nofollow" target="_blank"
+                            href="https://www.facebook.com/AttikaStyle/" aria-label="facebook">
+                            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98">
+                                <path
+                                    d="M49 0a49 49 0 1 0 0 98 49 49 0 0 0 0-98zm19 25h-7c-6 0-7 2-7 6v8h13v13H54v33H41V52H30V39h11v-9c0-11 7-17 17-17h10v12z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- instagram -->
+                    <li class="social__item">
+                        <a class="social__link" rel="nofollow" target="_blank"
+                            href="https://www.instagram.com/attika_ua/" aria-label="instagram">
+                            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98">
+                                <path
+                                    d="M71 50c0 11-10 21-22 21S27 61 27 50v-7h-6v31c0 1 1 3 3 3h50l3-3V43h-7l1 7zM65 35h8c2 0 4-1 4-3v-8c0-2-2-3-4-3h-8c-1 0-3 1-3 3v8c0 2 2 3 3 3z">
+                                </path>
+                                <path
+                                    d="M49 0a49 49 0 1 0 0 98 49 49 0 0 0 0-98zm27 85H22c-5 0-9-4-9-9V22c0-5 4-9 9-9h54c5 0 9 4 9 9v54c0 5-4 9-9 9z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- youtube -->
+                    <li class="social__item">
+                        <a class="social__link" rel="nofollow" target="_blank"
+                            href="https://www.youtube.com/channel/UCEsc9zkRnuzRJ9R2-Ezf5bA" aria-label="youtube">
+                            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98">
+                                <path
+                                    d="M26 52h4v21h3V52h4v-3H26zM57 55l-4 2v-8h-3v24h3v-1l4 2 2-2 1-4v-7l-1-4-2-2zm-1 13l-1 3-2-1V59l2-1 1 2v8zM44 69l-2 2-1-1V55h-3v17l2 2 4-3v2h3V55h-3v14zM47 38l1-2v-8l-1-2c-1 0-2 0-2 2v8c0 2 1 2 2 2z">
+                                </path>
+                                <path
+                                    d="M49 0a49 49 0 1 0 0 98 49 49 0 0 0 0-98zm5 23h4v15l3-1V23h3v18h-3v-2l-4 2-2-1-1-3V23zm-12 6l1-4c1-2 2-2 4-2 1 0 3 0 4 2l1 4v6l-1 5-4 1-4-1-1-5v-6zm-9-12l2 9 3-9h4l-5 14v10h-3V31l-3-8-2-6h4zm42 58c0 3-3 5-6 5l-20 1-21-1c-2 0-5-2-5-5l-1-13 1-13c0-3 3-5 5-5l21-1 20 1c3 0 6 2 6 5l1 13-1 13z">
+                                </path>
+                                <path
+                                    d="M67 55l-4 2-1 4v7l1 4 4 2a5 5 0 0 0 5-4v-3h-3v2l-2 2c-1 0-2-1-2-3v-3h7v-4l-1-4-4-2zm2 7h-4v-1c0-2 1-3 2-3s2 1 2 3v1z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- twitter -->
+                    <!-- <li class="social__item">
+                <a class="social__link" rel="nofollow" target="_blank" href="https://twitter.com/attika777" aria-label="twitter">
+                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98">
+                        <path d="M49 0a49 49 0 1 0 0 98 49 49 0 0 0 0-98zm29 36v2c0 20-15 42-42 42-8 0-16-2-23-7a30 30 0 0 0 21-6c-6 0-11-4-13-10v-1h5c-6-2-10-7-10-14v-1l6 2a15 15 0 0 1-4-19v-1l1 1c7 9 18 14 29 15v-3a15 15 0 0 1 26-11l9-3h1c-1 3-3 6-6 8l7-2h1l-8 8z"
+                        /> </svg>
+                </a>
+            </li> -->
+                    <!-- linkedin -->
+                    <li class="social__item">
+                        <a class="social__link" rel="nofollow" target="_blank"
+                            href="https://www.linkedin.com/company/аттіка/" aria-label="linkedin">
+                            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98">
+                                <path
+                                    d="M49 0a49 49 0 1 0 0 98 49 49 0 0 0 0-98zM31 82H17V38h14v44zm-7-50a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm58 50H68V60c0-5 0-11-7-11s-8 5-8 11v22H39V38h13v6h1c1-4 6-7 13-7 13 0 16 9 16 21v24z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <!-- end social -->
+            </div>
+            <div class="footer__col footer__col--copyright col-xs-12 col-lp-8 col-lg-9">
+                <span class="footer__copyright">Компания "ATTИKA". Все права защищены © 2023</span>
+            </div>
+        </div>
+    </div>
+</footer>
+        <!-- end Footer -->
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js?_v=20230205190007"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#menu>.menu__item').find('.menu__submenu--lvl1').each(function () {
+                $(this).find('.menu__item').find('.menu__submenu--lvl1').addClass('menu__submenu--lvl2').removeClass('menu__submenu--lvl1');
+            });
+        });
+    </script>
+    <script defer src="js/global.min.js?_v=20230205190007"></script>
+    <script src="js/rocket-loader.min.js?_v=20230205190007" data-cf-settings="" defer=""></script>
+</body>
+
+</html>

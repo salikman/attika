@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head-project-list.html', {
+"title": "Проекты"
+})
+
+<body class="project-list-page">
+    <div class="wrapper">
+        <!-- Header -->
+        @@include('./html/base/header.html')
+        <!-- end Header -->
+
+        <div class="top-panel">
+            <picture class="top-panel__img js-top-panel-parallax">
+                <img src="@img/service.69bd469d8840b16a476d6a20334faeff4.jpg.webp" alt="Проекты деревянных домов"
+                    srcset="@img/service.69bd469d8840b16a476d6a20334faeff4.jpg.webp 1920w 
+                             @img/service.69bd469d8840b16a476d6a20334faeff4.jpg.webp 1024w
+                             @img/service.9193297ca352a70b0e5d1b8791c539eb4.jpg 768w">
+            </picture>
+        </div>
+        <!-- Main -->
+        <main class="main">
+            <section id="filter">
+                <div class="container">
+                    <h1 class="section-title section-title--left">Проекты</h1>
+                </div>
+                <div data-check-selector="#fllterList" class="loading">
+                    <div id="fllterList" class="fllterList">
+                        <div id="filters-col" class="filters-col">
+                            <button id="filterMobileBtn" class="hamburger"><span class="hamburger__box"><span class="hamburger__inner"></span></span> <span class="visually-hidden">Меню</span></button>
+                            
+                            <div class="filters">
+                                <div class="filter-box">
+                                    <h5 class="filter-box__title">Категория дома</h5>
+                                    <div class="filter-box__list">
+                                        <label class="filter-box__label">
+                                            <input type="checkbox">
+                                            <span class="filter-box__text">Деревянные коттеджи</span>
+                                        </label>
+                                        <label class="filter-box__label">
+                                            <input type="checkbox">
+                                            <span class="filter-box__text">Дома из клееного бруса</span>
+                                        </label>
+                                        <label class="filter-box__label">
+                                            <input type="checkbox">
+                                            <span class="filter-box__text">Дачные дома</span>
+                                        </label>
+                                        <label class="filter-box__label">
+                                            <input type="checkbox">
+                                            <span class="filter-box__text">Деревянные бани</span>
+                                        </label>
+                                        <label class="filter-box__label">
+                                            <input type="checkbox">
+                                            <span class="filter-box__text">Садовые домики</span>
+                                        </label>
+                                        <label class="filter-box__label">
+                                            <input type="checkbox">
+                                            <span class="filter-box__text">Коммерческие проекты</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="filter-box">
+                                    <h5 class="filter-box__title">Площадь</h5>
+                                    <div class="filter-box__list">
+                                        <div class="fltr-range">
+                                            <span>От</span>
+                                            <input type="text" id="fltr-range__value--min" class="fltr-range__value fltr-range__value--min" readonly>
+                                            <span>до</span>
+                                            <input type="text" id="fltr-range__value--max" class="fltr-range__value fltr-range__value--max" readonly>
+                                            <span>м <sup>2</sup></span>
+                                        </div>
+                                        <div id="slider-range"></div>
+                                    </div>
+                                </div>
+                                <div class="filter-box">
+                                    <h5 class="filter-box__title">Этажность</h5>
+                                    <div class="filter-box__list">
+                                        <label class="filter-box__label">
+                                            <input type="checkbox">
+                                            <span class="filter-box__text">1 этаж</span>
+                                        </label>
+                                        <label class="filter-box__label">
+                                            <input type="checkbox">
+                                            <span class="filter-box__text">2 этажа</span>
+                                        </label>
+                                        <label class="filter-box__label">
+                                            <input type="checkbox">
+                                            <span class="filter-box__text">2 этажа с мансардой</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="filter-box">
+                                    <h5 class="filter-box__title">Технология</h5>
+                                    <div class="filter-box__list">
+                                        <label class="filter-box__label">
+                                            <input type="checkbox">
+                                            <span class="filter-box__text">Клееный брус</span>
+                                        </label>
+                                        <label class="filter-box__label">
+                                            <input type="checkbox">
+                                            <span class="filter-box__text">Фахверк</span>
+                                        </label>
+                                        <label class="filter-box__label">
+                                            <input type="checkbox">
+                                            <span class="filter-box__text">Каркас</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!---->
+                                <button class="btn">Очистить фильтр</button>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <h3 id="headingFlats" class="heading-flats">Подобрано
+                                <span class="heading-flats__highlight">140</span> <span>Проектов</span>
+                            </h3>
+                            <div class="project-list row">
+                                <div class="project-list__item col-xs-12 col-tb-6 col-lg-6">
+                                    <div class="project-box"><a href="#" aria-label="Деревянный коттедж, проект №2-330"
+                                            class="project-box__img image-box" target="_blank"><img
+                                                src="@img/1000.5cf89cc56587216f780109dc2533cb7c4.jpg"
+                                                alt="Деревянный коттедж, проект №2-330"></a>
+                                        <div class="project-box__info"><span class="project-box__info-txt">Деревянный
+                                                коттедж, проект №2-330</span> <span class="project-box__info-txt">330
+                                                м<sup>2</sup></span> <span class="project-box__info-txt">2 этажа</span>
+                                            <span class="new-label">Новый</span>
+                                        </div>
+                                        <div class="project-box__price">По запросу</div>
+                                    </div>
+                                </div>
+                                <div class="project-list__item col-xs-12 col-tb-6 col-lg-6">
+                                    <div class="project-box"><a
+                                            href="proektyi/derevyannyie-kottedzhi/derevyannyij-kottedzh-388"
+                                            aria-label="Деревянный коттедж, проект №2-434 (388)"
+                                            class="project-box__img image-box" target="_blank"><img
+                                                src="@img/388-v2-1.5cf89cc56587216f780109dc2533cb7c4.jpg"
+                                                alt="Деревянный коттедж, проект №2-434 (388)"></a>
+                                        <div class="project-box__info"><span class="project-box__info-txt">Деревянный
+                                                коттедж, проект №2-434 (388)</span> <span
+                                                class="project-box__info-txt">434 м<sup>2</sup></span> <span
+                                                class="project-box__info-txt">2 этажа</span> <span
+                                                class="new-label">Новый</span></div>
+                                        <div class="project-box__price">По запросу</div>
+                                    </div>
+                                </div>
+                                <div class="project-list__item col-xs-12 col-tb-6 col-lg-6">
+                                    <div class="project-box"><a
+                                            href="proektyi/derevyannyie-kottedzhi/derevyannyij-kottedzh,-proekt-№2-356"
+                                            aria-label="Деревянный коттедж, проект №2-356"
+                                            class="project-box__img image-box" target="_blank"><img
+                                                src="@img/400-(2).5cf89cc56587216f780109dc2533cb7c4.jpg"
+                                                alt="Деревянный коттедж, проект №2-356"></a>
+                                        <div class="project-box__info"><span class="project-box__info-txt">Деревянный
+                                                коттедж, проект №2-356</span> <span class="project-box__info-txt">254
+                                                м<sup>2</sup></span> <span class="project-box__info-txt">2 этажа</span>
+                                            <span class="new-label">Новый</span>
+                                        </div>
+                                        <div class="project-box__price">По запросу</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-btn"><button class="btn">Показать еще</button></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        @@include('./html/base/footer.html')
+        <!-- end Footer -->
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#menu>.menu__item').find('.menu__submenu--lvl1').each(function () {
+                $(this).find('.menu__item').find('.menu__submenu--lvl1').addClass('menu__submenu--lvl2').removeClass('menu__submenu--lvl1');
+            });
+        });
+    </script>
+    <script defer src="js/global.min.js"></script>
+    <script src="js/rocket-loader.min.js" data-cf-settings="" defer=""></script>
+    <script>
+        $('#filterMobileBtn').on('click', () => {
+            $('#filters-col').toggleClass('filters-col--open');
+        })
+        $('.project-box__img.image-box').each(function () {
+            $(this).attr('target', '_blank')
+        })
+
+        loadingInterval = setInterval(function () {
+            let elem = $('.loading');
+            let checkElem = $(elem.attr('data-check-selector'));
+            if (checkElem.length) {
+                elem.slideDown(400);
+                clearInterval(loadingInterval);
+            }
+        }, 10);
+        $("#slider-range").slider({
+            range: true,
+            min: 0,
+            max: 700,
+            values: [300, 552],
+            slide: function (event, ui) {
+                $("#fltr-range__value--min").val(ui.values[0]);
+                $("#fltr-range__value--max").val(ui.values[1]);
+            }
+        });
+        $("#fltr-range__value--min").val($("#slider-range").slider("values", 0));
+        $("#fltr-range__value--max").val($("#slider-range").slider("values", 1));
+    </script>
+</body>
+
+</html>

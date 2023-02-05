@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css?_v=20230205190007" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20230205190007">
+    <title>Главная</title>
+    <style>
+        .text-box .text-box__picture {
+            display: none;
+        }
+        .text-box .text-box__picture:first-of-type {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="index-page">
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header" id="header">
+    <div class="container top">
+
+        <div class="dropdown wrapper contacts">
+            <picture><source srcset="img/phone-dark.webp" type="image/webp"><img class="phone fixed-show md-hide" src="img/phone-dark.webp" width="30" height="30"></picture>
+            <picture><source srcset="img/phone-green.webp" type="image/webp"><img class="phone phone-small" src="img/phone-green.webp" width="30" height="30"></picture>
+            <a href="tel:+380680110144" class="ph-phone1">+38 (068) 011-01-44</a>
+
+            <div class="dropdown">
+                <a class="list-contacts__link" href="tel:+380680110144">+38 (068) 011-01-44</a>
+
+                <p class="list-contacts__title">Адрес:</p>
+                <p class="list-contacts__street">г. Киев, ул. Радистов, 34В</p>
+
+                <p class="list-contacts__title">E-Mail:</p>
+                <a class="list-contacts__mail" href="mailto:sale@attika.ua">sale@attika.ua</a><br>
+                <span>(отдел продаж)</span><br><br>
+                <a class="list-contacts__mail" href="mailto:marketing@attika.ua ">marketing@attika.ua </a><br>
+                <span>(отдел маркетинга)</span><br><br>
+                <a class="list-contacts__mail" href="mailto:snabjenie@attika.ua">snabjenie@attika.ua</a><br>
+                <span>(отдел снабжения)</span>
+
+                <p class="list-contacts__title">График работы:</p>
+                <p class="list-contacts__street">Пн-Пт: 9:00 – 19:00 - на час війни за погодженням</p>
+                <p class="list-contacts__street">Сб: 11:00 – 17:00</p>
+            </div>
+        </div>
+
+        <div class="languages">
+            <a class="languages__link languages__link--active" href="https://attika.ua/">ru</a>
+            <a class="languages__link " href="https://attika.ua/ua/">ua</a>
+        </div>
+
+        <ul class="menu header__subnav">
+            <li class="menu__item">
+                <a class="menu__link menu__link--sm" href="poisk">
+                    <picture><source srcset="img/search.webp" type="image/webp"><img src="img/search.webp" class="fixed-hide" title="Поиск" width="30" height="30"></picture>
+
+                    <picture><source srcset="img/search-dark.webp" type="image/webp"><img src="img/search-dark.webp" class="fixed-show" title="Поиск" width="30" height="30"></picture>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link menu__link--sm" href="vopros-otvet">
+                    <picture><source srcset="img/question.webp" type="image/webp"><img src="img/question.webp" class="fixed-hide" title="Вопрос-ответ" width="30" height="30"></picture>
+
+                    <img src="img/question-dark.webp" class="fixed-show" title="Вопрос-ответ" width="30"
+                        height="30">
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link menu__link--sm" href="otzyivyi">
+                    <picture><source srcset="img/review.webp" type="image/webp"><img src="img/review.webp" class="fixed-hide" title="Отзывы" width="30" height="30"></picture>
+
+                    <picture><source srcset="img/review-dark.webp" type="image/webp"><img src="img/review-dark.webp" class="fixed-show" title="Отзывы" width="30" height="30"></picture>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="container body">
+        <a class="logo" href="https://attika.ua/">
+            <img class="logo__img logo__img--lg" src="img/logo-dark-ru.webp" width="269" height="72"
+                alt="Деревянные дома из клееного бруса – АТТИКА | Строительство деревянных домов под ключ в Киеве и Украине"
+                loading="lazy">
+            <img class="logo__img logo__img--xs" src="img/logo--xs.webp" width="55" height="50"
+                alt="Деревянные дома из клееного бруса – АТТИКА | Строительство деревянных домов под ключ в Киеве и Украине"
+                loading="lazy">
+        </a>
+
+        <div class="nav-mobile" id="navMobile">
+            <nav class="header__nav">
+                <!-- Menu -->
+                <ul class="menu" id="menu">
+                    <li class="menu__item"><a class="menu__link" href="proektyi/">Проекты</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link menu__link--has-submenu" href="texnologii/">Технологии</a>
+                        <ul class="menu__submenu menu__submenu--lvl1" role="menu">
+                            <li class="menu__item"><a class="menu__link" href="texnologii/doma-iz-kleenogo-brusa"
+                                   >Дома из клееного бруса</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="texnologii/faxverkovyie-doma"
+                                   >Фахверковые дома</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="texnologii/doma-po-karkasnoj-texnologii"
+                                   >Дома по каркасной технологии</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link menu__link--has-submenu" href="uslugi/">Услуги</a>
+                        <ul class="menu__submenu menu__submenu--lvl1" role="menu">
+                            <li class="menu__item"><a class="menu__link" href="uslugi/proektirovanie/"
+                                   >Проектирование домов</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="uslugi/stroitelstvo/"
+                                   >Строительство домов</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="uslugi/proizvodstvo-brusa/"
+                                   >Производство бруса</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="uslugi/izgotovlenie/"
+                                   >Изготовление столярных изделий</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link menu__link--has-submenu" href="galereya/">Галерея</a>
+                        <ul class="menu__submenu menu__submenu--lvl1" role="menu">
+                            <li class="menu__item"><a class="menu__link" href="galereya/fotogalerei/"
+                                   >Фото</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="galereya/realizovannyie-proektyi/"
+                                   >3D -
+                                    туры</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="galereya/video/"
+                                   >Видео</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="novosti-kompanii/">Блог</a></li>
+                    <li class="menu__item"><a class="menu__link menu__link--has-submenu" href="about/">О нас</a>
+                        <ul class="menu__submenu menu__submenu--lvl1" role="menu">
+                            <li class="menu__item"><a class="menu__link" href="about/o-kompanii">О
+                                    компании</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="about/sobstvennoe-proizvodstvo"
+                                   >Наше производство</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="about/partneram"
+                                   >Партнерам</a></li>
+                            <li class="menu__item"><a class="menu__link" href="pdf/1-presentation-attika-ru.pdf"
+                                    target="_blank">Презентация</a></li>
+                            <li class="menu__item"><a class="menu__link" href="about/vakansii"
+                                   >Вакансии</a></li>
+
+                            <li class="menu__item"><a class="menu__link" href="about/advantages"
+                                   >Преимущества</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="kontaktyi">Контакты</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="kalkulyator/">Калькулятор</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sub-menu fixed-show">
+            <div class="languages">
+                <a class="languages__link languages__link--active" href="https://attika.ua/">ru</a>
+                <a class="languages__link " href="https://attika.ua/ua/">ua</a>
+            </div>
+
+            <div class="dropdown wrapper contacts">
+                <picture><source srcset="img/phone-dark.webp" type="image/webp"><img class="phone fixed-show md-hide" src="img/phone-dark.webp" width="30" height="30"></picture>
+                <picture><source srcset="img/phone-green.webp" type="image/webp"><img class="phone phone-small" src="img/phone-green.webp" width="30" height="30"></picture>
+                <a href="tel:+380680110144" class="ph-phone1">+38 (068) 011-01-44</a>
+
+                <div class="dropdown">
+                    <a class="list-contacts__link" href="tel:+380680110144">+38 (068) 011-01-44</a>
+                    <p class="list-contacts__title">Адрес:</p>
+                    <p class="list-contacts__street">г. Киев, ул. Радистов, 34В</p>
+                    <p class="list-contacts__title">E-Mail:</p>
+                    <a class="list-contacts__mail" href="mailto:sale@attika.ua">sale@attika.ua</a><br>
+                    <span>(отдел продаж)</span><br><br>
+                    <a class="list-contacts__mail" href="mailto:marketing@attika.ua ">marketing@attika.ua</a><br>
+                    <span>(отдел маркетинга)</span><br><br>
+                    <a class="list-contacts__mail" href="mailto:snabjenie@attika.ua">snabjenie@attika.ua</a><br>
+                    <span>(отдел снабжения)</span>
+                    <p class="list-contacts__title">График работы:</p>
+                    <p class="list-contacts__street">Пн-Пт: 9:00 – 19:00 - на час війни за погодженням</p>
+                    <p class="list-contacts__street">Сб: 11:00 – 17:00</p>
+                </div>
+            </div>
+
+            <ul class="menu header__subnav">
+                <li class="menu__item">
+                    <a class="menu__link menu__link--sm" href="poisk">
+                        <picture><source srcset="img/search.webp" type="image/webp"><img src="img/search.webp" class="fixed-hide" title="Поиск" width="30" height="30"></picture>
+                        <picture><source srcset="img/search-dark.webp" type="image/webp"><img src="img/search-dark.webp" class="fixed-show" title="Поиск" width="30" height="30"></picture>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--sm" href="vopros-otvet">
+                        <picture><source srcset="img/question.webp" type="image/webp"><img src="img/question.webp" class="fixed-hide" title="Вопрос-ответ" width="30" height="30"></picture>
+                        <picture><source srcset="img/question-dark.webp" type="image/webp"><img src="img/question-dark.webp" class="fixed-show" title="Вопрос-ответ" width="30" height="30"></picture>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--sm" href="otzyivyi">
+                        <picture><source srcset="img/review.webp" type="image/webp"><img src="img/review.webp" class="fixed-hide" title="Отзывы" width="30" height="30"></picture>
+                        <picture><source srcset="img/review-dark.webp" type="image/webp"><img src="img/review-dark.webp" class="fixed-show" title="Отзывы" width="30" height="30"></picture>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header__mobile-btn">
+            <button class="hamburger" id="navMobileBtn" aria-haspopup="true" aria-expanded="true">
+                <span class="hamburger__box"><span class="hamburger__inner"></span></span>
+                <span class="visually-hidden">Меню</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container search">
+        <form action="/poisk" method="GET">
+            <picture><source srcset="img/search-dark.webp" type="image/webp"><img src="img/search-dark.webp" style="display:none;"></picture>
+            <input type="text" name="search" placeholder="Поиск по сайту">
+            <img src="img/close.svg" style="display:none;" class="close">
+        </form>
+    </div>
+</header>
+        <!-- end Header -->
+
+        <!-- Main -->
+        <main class="main">
+
+            <!-- Section main -->
+            <section class="section-main section">
+                <div class="section__bg section__bg--dark">
+
+                    <div class="main-gallery swiper-container swiper-container-horizontal" id="mainGallery">
+                        <div class="swiper-wrapper">
+                            <div class="main-gallery__slide swiper-slide"
+                                data-swiper-slide-index="3" style="width: 1400px;">
+                                <img src="img/derevyannyj-dom-fahverk-2-178-1.f6901eba0c32dfa11d0d0c5ef66a3bcd1.jpg.webp"
+                                    alt="Дом фахверк" width="1920" height="960">
+
+                                <div class="swiper-slide-description container">
+                                    <span class="header">230 м²</span>
+                                    <p>Проект фахверка с большими окнами</p>
+
+                                    <a class="btn btn--white">Подробнее</a>
+
+                                </div>
+                            </div>
+                            <div class="main-gallery__slide swiper-slide">
+                                <img src="img/388-swiper-2.f6901eba0c32dfa11d0d0c5ef66a3bcd1.jpg.webp"
+                                    alt="Деревянный дом из бруса с большими окнами" width="1920" height="960">
+
+                                <div class="swiper-slide-description container">
+                                    <span class="header">434 м² гармонии с природой</span>
+                                    <p>Никогда дом из бруса не был таким комфортным</p>
+
+                                    <a class="btn btn--white">Подробнее</a>
+
+                                </div>
+                            </div>
+                            <div class="main-gallery__slide swiper-slide">
+                                <img src="img/229.f6901eba0c32dfa11d0d0c5ef66a3bcd1.jpg.webp"
+                                    alt="Деревянный дом с большими окнами" width="1920" height="960">
+
+                                <div class="swiper-slide-description container">
+                                    <span class="header">Симфония стекла и дерева</span>
+                                    <p>Дом из клееного бруса 229 м²</p>
+
+                                    <a class="btn btn--white">Подробнее</a>
+
+                                </div>
+                            </div>
+                            <div class="main-gallery__slide swiper-slide">
+                                <img src="img/4000.f6901eba0c32dfa11d0d0c5ef66a3bcd1.jpg.webp"
+                                    alt="Дом из клееного бруса" width="1920" height="960">
+
+                                <div class="swiper-slide-description container">
+                                    <span class="header">330 м²</span>
+                                    <p>Индивидуальный проект из клееного бруса</p>
+
+                                    <a class="btn btn--white">Подробнее</a>
+
+                                </div>
+                            </div>
+                            <div class="main-gallery__slide swiper-slide">
+                                <img src="img/derevyannyj-dom-fahverk-2-178-1.f6901eba0c32dfa11d0d0c5ef66a3bcd1.jpg.webp"
+                                    alt="Дом фахверк" width="1920" height="960">
+
+                                <div class="swiper-slide-description container">
+                                    <span class="header">230 м²</span>
+                                    <p>Проект фахверка с большими окнами</p>
+
+                                    <a class="btn btn--white">Подробнее</a>
+
+                                </div>
+                            </div>
+                            <div class="main-gallery__slide swiper-slide">
+                                <img src="img/388-swiper-2.f6901eba0c32dfa11d0d0c5ef66a3bcd1.jpg.webp"
+                                    alt="Деревянный дом из бруса с большими окнами" width="1920" height="960">
+
+                                <div class="swiper-slide-description container">
+                                    <span class="header">434 м² гармонии с природой</span>
+                                    <p>Никогда дом из бруса не был таким комфортным</p>
+
+                                    <a class="btn btn--white">Подробнее</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="nav-btn nav-btn--prev nav-btn--white">
+                            <svg class="nav-btn__arr" xmlns="http://www.w3.org/2000/svg" width="28" height="47"
+                                viewBox="0 0 28 47">
+                                <path fill-rule="evenodd"
+                                    d="M27.5 2.8L25 .5a1.5 1.5 0 0 0-2.3 0L.6 22.5c-.3.2-.5.6-.5 1s.2.8.5 1.1l22.4 22a1.5 1.5 0 0 0 2.2 0l2.4-2.4c.3-.3.4-.7.4-1 0-.5-.1-.9-.4-1.2L8.6 23.5 27.5 5c.3-.3.4-.7.4-1 0-.5-.1-.8-.4-1.2z">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <button class="nav-btn nav-btn--next nav-btn--white">
+                            <svg class="nav-btn__arr" xmlns="http://www.w3.org/2000/svg" width="28" height="47"
+                                viewBox="0 0 28 47">
+                                <path fill-rule="evenodd"
+                                    d="M27.5 22.4L5.2.4A1.5 1.5 0 0 0 3 .5L.6 2.9C.3 3.2 0 3.5 0 4c0 .4.2.8.5 1.1l18.8 18.5L.6 42c-.3.3-.5.7-.5 1.1 0 .4.2.8.5 1L3 46.6a1.5 1.5 0 0 0 2.2 0l22.3-21.9c.4-.3.5-.7.5-1 0-.5-.1-.9-.5-1.2z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="nav-dots nav-dots--clickable swiper-pagination-bullets"><span
+                                class="nav-dots__bullet nav-dots__bullet--active"></span><span
+                                class="nav-dots__bullet"></span><span class="nav-dots__bullet"></span><span
+                                class="nav-dots__bullet"></span></div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-main__box container">
+                    <img class="section-main__logo" src="img/section-main-logo.png.webp"
+                        alt="Деревянные дома из клееного бруса – АТТИКА | Строительство деревянных домов под ключ в Киеве и Украине"
+                        width="150" height="166">
+
+                </div>
+            </section>
+            <!-- end Section main -->
+
+            <!-- Section construction -->
+            <section class="section-construction section section--center" data-scroll>
+                <div class="section__heading container">
+                    <!-- <h2 class="section-title">Технологии</h2> -->
+                    <h2 class="section-title">Мы строим</h2>
+                </div>
+                <ul class="construction-list row">
+
+                    <li class="construction-list__item col-xs-12 col-lp-4">
+                        <a class="figure-box">
+                            <picture class="figure-box__img image-box">
+                                <source srcset="img/dom-kleenui-brus12.jpg.webp" media="(min-width: 480px)">
+                                <img src="img/dom-kleenui-brus12.jpg.webp" alt="Дома из клееного бруса" width="634"
+                                    height="457" loading="lazy">
+                            </picture>
+                            <div class="figure-box__caption">Дома из клееного бруса</div>
+                        </a>
+                    </li>
+                    <li class="construction-list__item col-xs-12 col-lp-4">
+                        <a class="figure-box">
+                            <picture class="figure-box__img image-box">
+                                <source srcset="img/faxverk111.jpg.webp" media="(min-width: 480px)">
+                                <img src="img/faxverk111.jpg.webp" alt="Фахверковые дома" width="634" height="457"
+                                    loading="lazy">
+                            </picture>
+                            <div class="figure-box__caption">Фахверковые дома</div>
+                        </a>
+                    </li>
+                    <li class="construction-list__item col-xs-12 col-lp-4">
+                        <a class="figure-box">
+                            <picture class="figure-box__img image-box">
+                                <source srcset="img/karkasnui-dom2.jpg.webp" media="(min-width: 480px)">
+                                <img src="img/karkasnui-dom2.jpg.webp" alt="Дома по каркасной технологии" width="634"
+                                    height="457" loading="lazy">
+                            </picture>
+                            <div class="figure-box__caption">Дома по каркасной технологии</div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- end Section construction -->
+
+            <!-- Section projects tabs -->
+            <section class="section-projects-tabs section section--gray section--center print-no">
+                <div class="section__heading container">
+                    <h2 class="section-title">Проекты</h2>
+                </div>
+                <div class="tabs projects-slider">
+                    <!-- tabs nav -->
+                    <ul class="tabs__nav tabs__nav--center container" role="tablist">
+                        <li class="tabs__nav-item"><a class="tabs__nav-link tabs__nav-link--tr" href="#tab1"
+                                id="tab1">Деревянные коттеджи</a></li>
+                        <li class="tabs__nav-item"><a class="tabs__nav-link tabs__nav-link--tr" href="#tab2" id="tab2"
+                                aria-selected="true">Дома из клееного бруса</a></li>
+                        <li class="tabs__nav-item"><a class="tabs__nav-link tabs__nav-link--tr" href="#tab3"
+                                id="tab3">Дачные дома</a></li>
+                        <li class="tabs__nav-item"><a class="tabs__nav-link tabs__nav-link--tr" href="#tab4"
+                                id="tab4">Деревянные бани</a></li>
+                        <li class="tabs__nav-item"><a class="tabs__nav-link tabs__nav-link--tr" href="#tab5"
+                                id="tab5">Садовые домики, беседки</a></li>
+                        <li class="tabs__nav-item"><a class="tabs__nav-link tabs__nav-link--tr" href="#tab6"
+                                id="tab6">Коммерческие проекты</a></li>
+                    </ul>
+                    <!-- tabs 1 -->
+                    <div class="tabs__content" id="tab1">
+                        <div class="projects-tabs-list js-projects-tabs-list swiper-container swiper-container-horizontal">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide active">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/1000.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Деревянный коттедж от компании Аттика 330 квадратов" width="460"
+                                                height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>2-330</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>330</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+
+                                                    2 этажа
+
+                                                </strong>
+                                            </span>
+                                            <span class="new-label">Новый</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide next">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/388-v2-1.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Деревянный дом из клееного бруса" width="460" height="345"
+                                                loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>388</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>434</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+
+                                                    2 этажа
+
+                                                </strong>
+                                            </span>
+                                            <span class="new-label">Новый</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/400-(2).5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Деревянный коттедж от компании Аттика" width="460" height="345"
+                                                loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>2-356</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>254</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+
+                                                    2 этажа
+
+                                                </strong>
+                                            </span>
+                                            <span class="new-label">Новый</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tabs__content" id="tab2">
+                        <div class="projects-tabs-list js-projects-tabs-list swiper-container swiper-container-horizontal">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide active">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/dom-iz-kleenogo-brysa1-2-128.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Деревянный дом из клееного бруса, проект деревянного дома №2-128"
+                                                width="460" height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>2-128</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>128</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>2 этажа</strong>
+                                            </span>
+                                            <span class="new-label">Новый</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide next">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box"
+                                            href="proektyi/doma-iz-kleenogo-brusa/dom-iz-kleenogo-brusa-proekt-doma-№2-197">
+                                            <img src="img/dom-iz-kleenogo-brysa2-197-1.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Деревянный дом из клееного бруса, проект деревянного дома №2-197"
+                                                width="460" height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект<strong>2-197</strong></span>
+                                            <span class="project-box__info-txt"><strong>197</strong>
+                                                м<sup>2</sup></span>
+                                            <span class="project-box__info-txt"><strong>2 этажа</strong></span>
+                                            <span class="new-label">Новый</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/dom-iz-kleenogo-brysa-2-235-2.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Фахверковый деревянный дом, фахверк проект дома №2-233" width="460"
+                                                height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>2-233</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>233</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+
+                                                    2 этажа
+
+                                                </strong>
+                                            </span>
+                                            <span class="new-label">Новый</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tabs__content" id="tab3">
+                        <div class="projects-tabs-list js-projects-tabs-list swiper-container swiper-container-horizontal">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide active">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/dachnui-dom-1-82-1.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Дачный деревянный дом, проект дачного дома №1-82" width="460"
+                                                height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>1-82</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>82</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+                                                    1 этаж
+
+
+                                                </strong>
+                                            </span>
+                                            <span class="new-label">Новый</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide next">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/dachnui-dom-1-87.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Дачный деревянный дом, проект дачного дома №1-87" width="460"
+                                                height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>1-87</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>87</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+                                                    1 этаж
+
+
+                                                </strong>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/dachnui-dom-1-98.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Дачный деревянный дом, проект дачного дома №1-98" width="460"
+                                                height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>1-98</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>98</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+                                                    1 этаж
+
+
+                                                </strong>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tabs__content" id="tab4">
+                        <div class="projects-tabs-list js-projects-tabs-list swiper-container swiper-container-horizontal">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide active">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/dereviannaya-banya-1-81-1.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Деревянная баня, проект деревянной бани из клееного бруса №1-81"
+                                                width="460" height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>1-81</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>81</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+                                                    1 этаж
+
+
+                                                </strong>
+                                            </span>
+                                            <span class="new-label">Новый</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide next">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/dereviannaya-banya-1-29.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Деревянная баня, проект деревянной бани из клееного бруса №1-29"
+                                                width="460" height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>1-29</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>29</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+                                                    1 этаж
+
+
+                                                </strong>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/dereviannaya-banya-1-70-1.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Деревянная баня, проект деревянной бани из клееного бруса №1-70"
+                                                width="460" height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>1-70</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>70</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+                                                    1 этаж
+
+
+                                                </strong>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tabs__content" id="tab5">
+                        <div class="projects-tabs-list js-projects-tabs-list swiper-container swiper-container-horizontal">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide active">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/sadovyy-domik-1-28.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Беседка из клееного бруса, проект деревянной беседки из клееного бруса №1-28"
+                                                width="460" height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>1-28</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>28</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+                                                    1 этаж
+
+
+                                                </strong>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide next">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/sadovyy-domik-1-30.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Беседка из клееного бруса, проект деревянной беседки из клееного бруса №1-30"
+                                                width="460" height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>1-30</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>30</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+                                                    1 этаж
+
+
+                                                </strong>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/sadovyy-domik-1-57.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Садовый дом из клееного бруса, проект летнего садового дома №1-57"
+                                                width="460" height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>1-57</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>57</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+                                                    1 этаж
+
+
+                                                </strong>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tabs__content" id="tab6">
+                        <div class="projects-tabs-list js-projects-tabs-list swiper-container swiper-container-horizontal">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide active">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/sadovyy-domik-1-115-1.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Садовый дом из клееного бруса, проект летнего садового дома №1-115"
+                                                width="460" height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>1-115</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>115</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+                                                    1 этаж
+
+
+                                                </strong>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide next">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box"
+                                            href="proektyi/kommercheskie-proektyi/kommercheskiu-proec2-528"
+                                            aria-label="Коммерческий проект №2-528">
+                                            <img src="img/derevyannyj-kottedzh-2-528-1.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Деревянный коттедж из клееного бруса, проект деревянного дома №2-528"
+                                                width="460" height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>2-528</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>528</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+
+
+                                                    2 этажа с мансардой
+                                                </strong>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="project-box">
+                                        <a class="project-box__img image-box">
+                                            <img src="img/kommercheskiu-proect1-304.5cf89cc56587216f780109dc2533cb7c1.jpg.webp"
+                                                alt="Коммерческий проект дома из клееного бруса, проект летнего садового дома №1-304"
+                                                width="460" height="345" loading="lazy">
+                                        </a>
+                                        <div class="project-box__info">
+                                            <span class="project-box__info-txt">Проект
+                                                <strong>1-304</strong>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>304</strong> м
+                                                <sup>2</sup>
+                                            </span>
+                                            <span class="project-box__info-txt">
+                                                <strong>
+                                                    1 этаж
+
+
+                                                </strong>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="nav-btn nav-btn--prev nav-btn--disabled">
+                        <svg class="nav-btn__arr" xmlns="http://www.w3.org/2000/svg" width="28" height="47"
+                            viewBox="0 0 28 47">
+                            <path fill-rule="evenodd"
+                                d="M27.5 2.8L25 .5a1.5 1.5 0 0 0-2.3 0L.6 22.5c-.3.2-.5.6-.5 1s.2.8.5 1.1l22.4 22a1.5 1.5 0 0 0 2.2 0l2.4-2.4c.3-.3.4-.7.4-1 0-.5-.1-.9-.4-1.2L8.6 23.5 27.5 5c.3-.3.4-.7.4-1 0-.5-.1-.8-.4-1.2z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="nav-btn nav-btn--next nav-btn--disabled">
+                        <svg class="nav-btn__arr" xmlns="http://www.w3.org/2000/svg" width="28" height="47"
+                            viewBox="0 0 28 47">
+                            <path fill-rule="evenodd"
+                                d="M27.5 22.4L5.2.4A1.5 1.5 0 0 0 3 .5L.6 2.9C.3 3.2 0 3.5 0 4c0 .4.2.8.5 1.1l18.8 18.5L.6 42c-.3.3-.5.7-.5 1.1 0 .4.2.8.5 1L3 46.6a1.5 1.5 0 0 0 2.2 0l22.3-21.9c.4-.3.5-.7.5-1 0-.5-.1-.9-.5-1.2z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="section__btn container">
+                    <a class="btn">Все проекты</a>
+                </div>
+
+            </section>
+            <!-- end Projects tabs -->
+
+            <!-- Section reviews -->
+            <section class="section-reviews section section--center">
+                <picture class="section__bg section__bg--dark js-section-parallax">
+                    <source srcset="img/top-panel-otzuvu.jpg.webp" media="(min-width: 1024px)">
+                    <img src="img/top-panel-otzuvu.jpg.webp" alt="Отзывы" loading="lazy">
+                </picture>
+                <div class="section-reviews__box container">
+                    <div class="section__heading">
+                        <h2 class="section-title">Отзывы</h2>
+                    </div>
+                    <div class="reviews-slider">
+                        <div class="reviews-slider__container swiper-container swiper-container-horizontal" id="reviewsSlider">
+                            <div class="swiper-wrapper">
+                                <div class="reviews-slider__slide swiper-slide">
+                                    <div class="reviews-slider__box">
+                                        <div class="reviews-slider__wrap">
+                                            <div class="reviews-slider__img"><picture><source srcset="img/229.f6901eba0c32dfa11d0d0c5ef66a3bcd1.webp.webp" type="image/webp"><img src="img/229.f6901eba0c32dfa11d0d0c5ef66a3bcd1.jpg.webp" alt=""></picture></div>
+                                            <div class="reviews-slider__name">Назим Гулиев</div>
+                                            <div class="reviews-slider__star">
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                            </div>
+                                            <div class="reviews-slider__message">Пишите отзывы, особенно плохие, если будут. Они помогают стать нам лучше !!!! Пишите отзывы, особенно плохие, если будут. Они помогают стать нам лучше !!!! Пишите отзывы, особенно плохие, если будут. Они помогают стать нам лучше !!!!</div>
+                                            <a class="reviews-slider__more"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews-slider__slide swiper-slide">
+                                    <div class="reviews-slider__box">
+                                        <div class="reviews-slider__wrap">
+                                            <div class="reviews-slider__img"><picture><source srcset="img/229.f6901eba0c32dfa11d0d0c5ef66a3bcd1.webp.webp" type="image/webp"><img src="img/229.f6901eba0c32dfa11d0d0c5ef66a3bcd1.jpg.webp" alt=""></picture></div>
+                                            <div class="reviews-slider__name">Назим Гулиев</div>
+                                            <div class="reviews-slider__star">
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                            </div>
+                                            <div class="reviews-slider__message">Пишите отзывы, особенно плохие, если будут. Они помогают стать нам лучше !!!!</div>
+                                            <a class="reviews-slider__more"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews-slider__slide swiper-slide">
+                                    <div class="reviews-slider__box">
+                                        <div class="reviews-slider__wrap">
+                                            <div class="reviews-slider__img"><picture><source srcset="img/229.f6901eba0c32dfa11d0d0c5ef66a3bcd1.webp.webp" type="image/webp"><img src="img/229.f6901eba0c32dfa11d0d0c5ef66a3bcd1.jpg.webp" alt=""></picture></div>
+                                            <div class="reviews-slider__name">Назим Гулиев</div>
+                                            <div class="reviews-slider__star">
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                            </div>
+                                            <div class="reviews-slider__message">Пишите отзывы, особенно плохие, если будут. Они помогают стать нам лучше !!!!</div>
+                                            <a class="reviews-slider__more"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews-slider__slide swiper-slide">
+                                    <div class="reviews-slider__box">
+                                        <div class="reviews-slider__wrap">
+                                            <div class="reviews-slider__img"><picture><source srcset="img/229.f6901eba0c32dfa11d0d0c5ef66a3bcd1.webp.webp" type="image/webp"><img src="img/229.f6901eba0c32dfa11d0d0c5ef66a3bcd1.jpg.webp" alt=""></picture></div>
+                                            <div class="reviews-slider__name">Назим Гулиев</div>
+                                            <div class="reviews-slider__star">
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                            </div>
+                                            <div class="reviews-slider__message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga facilis porro sunt libero, molestias doloremque repudiandae corrupti aspernatur adipisci ipsum est repellat? Sit provident ipsum labore enim hic veniam.
+                                            In perferendis, maiores aperiam ducimus molestiae corrupti assumenda, ab exercitationem maxime at numquam porro ipsa obcaecati itaque quo suscipit voluptatem odit, expedita neque. Ratione mollitia eum animi, rem quasi voluptatibus.
+                                            Repudiandae sint repellendus, nam eum numquam, dignissimos adipisci ex aliquid id quos quis veniam tenetur dolorum. Quis, fuga, rem iure rerum quos voluptate voluptatum consectetur voluptatem dolorum eum eius error.</div>
+                                            <a class="reviews-slider__more"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews-slider__slide swiper-slide">
+                                    <div class="reviews-slider__box">
+                                        <div class="reviews-slider__wrap">
+                                            <div class="reviews-slider__img"><picture><source srcset="img/229.f6901eba0c32dfa11d0d0c5ef66a3bcd1.webp.webp" type="image/webp"><img src="img/229.f6901eba0c32dfa11d0d0c5ef66a3bcd1.jpg.webp" alt=""></picture></div>
+                                            <div class="reviews-slider__name">Назим Гулиев</div>
+                                            <div class="reviews-slider__star">
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                                <span class="star"><picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture></span>
+                                            </div>
+                                            <div class="reviews-slider__message">Пишите отзывы, особенно плохие, если будут. Они помогают стать нам лучше !!!! Пишите отзывы, особенно плохие, если будут. Они помогают стать нам лучше !!!! Пишите отзывы, особенно плохие, если будут. Они помогают стать нам лучше !!!! Пишите отзывы, особенно плохие, если будут. Они помогают стать нам лучше !!!!</div>
+                                            <a class="reviews-slider__more"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="nav-btn nav-btn--prev">
+                                <svg class="nav-btn__arr" xmlns="http://www.w3.org/2000/svg" width="28" height="47"
+                                    viewBox="0 0 28 47">
+                                    <path fill-rule="evenodd"
+                                        d="M27.5 2.8L25 .5a1.5 1.5 0 0 0-2.3 0L.6 22.5c-.3.2-.5.6-.5 1s.2.8.5 1.1l22.4 22a1.5 1.5 0 0 0 2.2 0l2.4-2.4c.3-.3.4-.7.4-1 0-.5-.1-.9-.4-1.2L8.6 23.5 27.5 5c.3-.3.4-.7.4-1 0-.5-.1-.8-.4-1.2z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <button class="nav-btn nav-btn--next">
+                                <svg class="nav-btn__arr" xmlns="http://www.w3.org/2000/svg" width="28" height="47"
+                                    viewBox="0 0 28 47">
+                                    <path fill-rule="evenodd"
+                                        d="M27.5 22.4L5.2.4A1.5 1.5 0 0 0 3 .5L.6 2.9C.3 3.2 0 3.5 0 4c0 .4.2.8.5 1.1l18.8 18.5L.6 42c-.3.3-.5.7-.5 1.1 0 .4.2.8.5 1L3 46.6a1.5 1.5 0 0 0 2.2 0l22.3-21.9c.4-.3.5-.7.5-1 0-.5-.1-.9-.5-1.2z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="section__btn">
+                        <a class="btn btn--green">Больше отзывов</a>
+                    </div>
+                </div>
+            </section>
+            <!-- end Section reviews -->
+
+            <!-- Section map -->
+            <section class="section-map section" id="sectionMap" data-scroll>
+                <div class="section-map__box container">
+                    <div class="section__heading">
+                        <h2 class="section-title">Аттика</h2>
+                        <p class="section-description section-description--lg">Строим современные экологичные деревянные
+                            дома</p>
+                    </div>
+                    <div class="map-slide">
+                        <div class="map-slide__img">
+                            <img class="js-section-parallax" src="img/ukraine_map_main.png.webp" alt="Аттика"
+                                width="1920" height="1080" loading="lazy">
+                            <div class="map-slide__achievement">
+                                <ul class="achievement-list js-title-parallax">
+
+                                    <li class="achievement-list__item">
+                                        <strong class="achievement-list__value">20</strong>
+                                        <strong class="achievement-list__title">лет <br>на рынке</strong>
+                                    </li>
+
+                                    <li class="achievement-list__item">
+                                        <strong class="achievement-list__value">600</strong>
+                                        <strong class="achievement-list__title">построенных<br>домов</strong>
+                                    </li>
+
+                                    <li class="achievement-list__item">
+                                        <strong class="achievement-list__value">4000</strong>
+                                        <strong class="achievement-list__title"><br>проектов</strong>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="map-slide__bg"></div>
+                        <div class="map-slide__description text-block">
+                            <p>С 1998 года строим <br><span class="text-block__up"><strong>деревянные
+                                        дома</strong></span><br> по финской технологии:</p>
+                            <ul>
+                                <li><a href="uslugi/proektirovanie/">Архитектурное бюро</a></li>
+                                <li><a href="uslugi/proizvodstvo-brusa/">Производство клееного бруса</a></li>
+                                <li><a href="uslugi/stroitelstvo/">Строительство домов и обслуживание</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end Section map -->
+
+            <!-- Section contact -->
+            <section class="section-contact section section--center print-no" id="suc">
+                <div class="container">
+                    <div class="section__heading">
+                        <h2 class="section-title">Сделай первый шаг к своей мечте!</h2>
+                        <p class="section-description">Вы можете назначить встречу у нас в офисе и посетить уже
+                            реализованные проекты деревянных домов</p>
+                    </div>
+
+                    <form id="WebForm" name="Home" accept-charset="utf-8" class="contact-form">
+                        <input type="hidden" name="name" value="Вебформа на главной странице (назначение встречи)">
+                        <div class="contact-form__group form-group">
+                            <label class="form-group__label">Имя</label>
+                            <input class="form-group__input" type="text" name="firstname" data-label="" value=""
+                                required="">
+                        </div>
+                        <div class="contact-form__group form-group">
+                            <label class="form-group__label">Телефон</label>
+                            <input class="form-group__input" type="text" name="phone" data-label="" value=""
+                                required="">
+                        </div>
+                        <div class="contact-form__btn">
+                            <input class="btn" id="contactFormSubmit" type="submit" value="Записаться на просмотр">
+                        </div>
+                    </form>
+                </div>
+                <p class="form-question__success"
+                    style="display:none;color:#080808;text-align:center;grid-column:1/-1;font-size:22px;z-index: 1000;position: relative;">
+                    ✅ Спасибо! Мы с Вами свяжемся в ближайшее время.
+                </p>
+            </section>
+            <!-- end Section contact -->
+
+            <!-- Section production -->
+            <section class="section-production section section--center" data-scroll>
+                <div class="container">
+                    <div class="section__heading">
+                        <h2 class="section-title">Наше производство <span class="section-title__small">клееного
+                                бруса</span></h2>
+                    </div>
+                    <ul class="production-list">
+                        <li class="production-list__item">
+                            <div class="text-box text-box--sm">
+                                <a class="text-box__picture">
+                                    <div class="image-box image-box--t1">
+                                        <img src="img/production-brus.adea83d25408c76fb5714e4246824b8d1.jpg.webp"
+                                            alt="Древесина" width="366" height="179" loading="lazy">
+                                    </div>
+                                </a>
+                                <h5 class="text-box__title">
+                                    <a>Древесина</a>
+                                </h5>
+                                <p class="text-box__description">Дерево является натуральным природным материалом,
+                                    который создает идеальный микроклимат для жизни человека. Для производства клееного
+                                    бруса мы закупаем древесину хвойных пород 1-го сорта в самых экологичных районах
+                                    Украины.</p>
+                                <div class="text-box__link">
+                                    <a class="link link--more btn btn--green">Подробнее</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="production-list__item">
+                            <div class="text-box text-box--sm">
+                                <a class="text-box__picture">
+                                    <div class="image-box image-box--t1">
+                                        <img src="img/production-kleu.adea83d25408c76fb5714e4246824b8d1.jpg.webp"
+                                            alt="Клей" width="366" height="179" loading="lazy">
+                                    </div>
+                                </a>
+                                <h5 class="text-box__title">
+                                    <a>Клей</a>
+                                </h5>
+                                <p class="text-box__description">В производстве клееного бруса мы применяем современные
+                                    клеевые системы, которые соответствуют всем стандартам европейского качества и
+                                    экологичности.</p>
+                                <div class="text-box__link">
+                                    <a class="link link--more btn btn--green">Подробнее</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="production-list__item">
+                            <div class="text-box text-box--sm">
+                                <a class="text-box__picture">
+                                    <div class="image-box image-box--t1">
+                                        <img src="img/production-zavod.adea83d25408c76fb5714e4246824b8d1.jpg.webp"
+                                            alt="Оборудование" width="366" height="179" loading="lazy">
+                                    </div>
+                                </a>
+                                <h5 class="text-box__title">
+                                    <a>Оборудование</a>
+                                </h5>
+                                <p class="text-box__description">Все комплектующие деревянной части будущих домов мы
+                                    изготавливаем на современном оборудовании, используя высококачественное сырье.</p>
+                                <div class="text-box__link">
+                                    <a class="link link--more btn btn--green">Подробнее</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- end Section production -->
+            <!-- Section steps -->
+            <section class="section-steps section section--center" data-scroll>
+                <picture class="section__bg section__bg--dark js-section-parallax">
+                    <img src="img/bg-step.jpg.webp" alt="Как мы будем строить ваш дом" width="1903" height="800"
+                        loading="lazy">
+                </picture>
+                <div class="container">
+                    <div class="section__heading">
+                        <h2 class="section-title">Как мы будем строить ваш дом</h2>
+                        <p class="section-description"><strong>Всего нам требуется около 6-ти месяцев, </strong>с
+                            момента нашего знакомства до момента передачи ключей от Вашего будущего дома!</p>
+                    </div>
+                    <ul class="accordion">
+                        <li class="accordion__item">
+                            <div class="accordion__picture">
+                                <img src="img/steps111.ddd4d2fe343ac08a5397b09b5d9e920d1.jpg.webp" alt="Знакомство"
+                                    width="315" height="317" loading="lazy">
+                            </div>
+                            <h6 class="accordion__title">Знакомство</h6>
+                            <p class="accordion__description"><span style="color: #cee827"><b>Встреча у нас в офисе в
+                                        Киеве: </b></span><br></p>
+                            <p>Знакомство и просмотр наших реализованных домов.</p>
+                            <span class="accordion__time">3-4 часа</span>
+                        </li>
+                        <li class="accordion__item">
+                            <div class="accordion__picture">
+                                <img src="img/steps2.ddd4d2fe343ac08a5397b09b5d9e920d1.jpg.webp" alt="Проектирование"
+                                    width="315" height="317" loading="lazy">
+                            </div>
+                            <h6 class="accordion__title">Проектирование</h6>
+                            <p class="accordion__description"><span style="color: #cee827"><b>Архитектурное бюро
+                                        «АТТИКА»:</b></span><br></p>
+                            <p>Выбор готового или разработка индивидуального проекта. </p>
+                            <span class="accordion__time">2-3 недели</span>
+                        </li>
+                        <li class="accordion__item">
+                            <div class="accordion__picture">
+                                <img src="img/kak-stroit3.ddd4d2fe343ac08a5397b09b5d9e920d1.jpg.webp"
+                                    alt="Производство" width="315" height="317" loading="lazy">
+                            </div>
+                            <h6 class="accordion__title">Производство</h6>
+                            <p class="accordion__description"><span style="color: #cee827"><b>Собственное производство
+                                        клееного бруса:</b></span><br></p>
+                            <p>Получаем готовый к сборке домокомплект из клееного бруса.</p>
+                            <span class="accordion__time">3-4 недели</span>
+                        </li>
+                        <li class="accordion__item">
+                            <div class="accordion__picture">
+                                <img src="img/brus.ddd4d2fe343ac08a5397b09b5d9e920d1.jpg.webp"
+                                    alt="Фундамент и Сборка дома " width="315" height="317" loading="lazy">
+                            </div>
+                            <h6 class="accordion__title">Фундамент и Сборка дома </h6>
+                            <p class="accordion__description"><span style="color: #cee827"><b>Ваш участок:
+                                    </b></span><br></p>
+                            <p>Проводим земляные работы – разработку котлована и траншей. Изготавливаем фундамент.
+                                Собираем деревянный дом.</p>
+                            <span class="accordion__time">2-3 месяца</span>
+                        </li>
+                        <li class="accordion__item">
+                            <div class="accordion__picture">
+                                <img src="img/attika-interior.ddd4d2fe343ac08a5397b09b5d9e920d1.jpg.webp"
+                                    alt="Монтаж и отделка" width="315" height="317" loading="lazy">
+                            </div>
+                            <h6 class="accordion__title">Монтаж и отделка</h6>
+                            <p class="accordion__description"><span style="color: #cee827"><b>Интерьер и
+                                        коммуникации:</b></span> <br></p>
+                            <p>Монтаж инженерных коммуникаций и инженерных систем. Монтаж кровли, установка стропильной
+                                системы.</p>
+                            <span class="accordion__time">3-4 месяца</span>
+                        </li>
+                        <li class="accordion__item">
+                            <div class="accordion__picture">
+                                <img src="img/attika-final.ddd4d2fe343ac08a5397b09b5d9e920d1.jpg.webp"
+                                    alt="Ваше новоселье" width="315" height="317" loading="lazy">
+                            </div>
+                            <h6 class="accordion__title">Ваше новоселье</h6>
+                            <p class="accordion__description"><span style="color: #cee827"><b>Ваш будущий
+                                        дом:</b></span> <br></p>
+                            <p>Торжественная передача ключей от Вашего будущего дома!</p>
+                            <span class="accordion__time">2-3 минуты</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- end Section steps -->
+            <!-- Section services -->
+            <section class="section-services section section--center" data-scroll>
+                <div class="container">
+                    <div class="section__heading">
+                        <h2 class="section-title">Услуги</h2>
+                        <p class="section-description">Компания АТТИКА предоставляет полный комплекс услуг по
+                            строительству домов из клееного бруса.</p>
+                    </div>
+                    <ul class="services-list">
+                        <li class="services-list__item">
+                            <div class="text-box">
+                                <a class="text-box__picture">
+                                    <div class="image-box image-box--t4">
+                                        <img src="img/proectirovanie-m.6b92e0c3488773197a3a0b330eef792c1.jpg.webp"
+                                            width="278" height="255" alt="Проектирование домов" loading="lazy">
+                                    </div>
+                                </a>
+                                <h5 class="text-box__title">
+                                    <a>Проектирование домов</a>
+                                </h5>
+                                <p class="text-box__description">Наши архитекторы при создании индивидуального проекта
+                                    учитывают все идеи, потребности и вкусы заказчика. Это позволяет нам построить
+                                    именно такой деревянный дом, о котором Вы мечтали!</p>
+                                <div class="text-box__link">
+                                    <a class="link link--more btn btn--green">Подробнее</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="services-list__item">
+                            <div class="text-box">
+                                <a class="text-box__picture">
+                                    <div class="image-box image-box--t4">
+                                        <img src="img/stroitelstvo-domov-m.6b92e0c3488773197a3a0b330eef792c1.jpg.webp"
+                                            width="278" height="255" alt="Строительство домов" loading="lazy">
+                                    </div>
+                                </a>
+                                <h5 class="text-box__title">
+                                    <a>Строительство домов</a>
+                                </h5>
+                                <p class="text-box__description">Собственные строительные бригады обеспечивают высокое
+                                    качество работ на всех этапах строительства деревянного дома: от заливки фундамента
+                                    до оформления интерьера и благоустройства придомовой территории.</p>
+                                <div class="text-box__link">
+                                    <a class="link link--more btn btn--green">Подробнее</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="services-list__item">
+                            <div class="text-box">
+                                <a class="text-box__picture">
+                                    <div class="image-box image-box--t4">
+                                        <img src="img/brys-proizvodstvo-m.6b92e0c3488773197a3a0b330eef792c1.jpg.webp"
+                                            width="278" height="255" alt="Производство бруса" loading="lazy">
+                                    </div>
+                                </a>
+                                <h5 class="text-box__title">
+                                    <a>Производство бруса</a>
+                                </h5>
+                                <p class="text-box__description">Все комплектующие деревянной части будущих домов и
+                                    клееный брус изготавливаются на собственном деревообрабатывающем заводе компании
+                                    "Аттика".</p>
+                                <div class="text-box__link">
+                                    <a class="link link--more btn btn--green">Подробнее</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="services-list__item">
+                            <div class="text-box">
+                                <a class="text-box__picture">
+                                    <div class="image-box image-box--t4">
+                                        <img src="img/izgotovlenie-2m.6b92e0c3488773197a3a0b330eef792c1.jpg.webp"
+                                            width="278" height="255" alt="Изготовление столярных изделий"
+                                            loading="lazy">
+                                    </div>
+                                </a>
+                                <h5 class="text-box__title">
+                                    <a>Изготовление столярных изделий</a>
+                                </h5>
+                                <p class="text-box__description">Разрабатываем комплексные решения для вашего интерьера.
+                                    Используем современные технологии изготовления энергосберегающих деревянных окон,
+                                    дверей, лестниц, кабинетов и мебели из натуральной древесины.</p>
+                                <div class="text-box__link">
+                                    <a class="link link--more btn btn--green">Подробнее</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- end Section services -->
+            <!-- Section tour -->
+            <section class="section-tour section section--center print-no">
+                <div class="section__heading container">
+                    <h2 class="section-title">Прогуляйтесь по деревянному дому
+                        <span class="new-label new-label--lg">от Аттики</span>
+                    </h2>
+                    <p class="section-description">3D прогулка по реализованными проектами</p>
+                </div>
+
+                <div class="tour-slider">
+                    <div class="swiper-container tour-slider__container swiper-container-horizontal" id="tourSlider">
+                        <div class="swiper-wrapper">
+
+                            <div class="tour-slider__slide swiper-slide active">
+                                <a class="tour-slider__box" target="_blank">
+                                    <img class="tour-slider__img"
+                                        src="img/slide-11-360.4b1ec48cd8abdf20a1e595053743ee391.jpg.webp" width="742"
+                                        height="325" alt="1" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="tour-slider__slide swiper-slide next">
+                                <a class="tour-slider__box" target="_blank">
+                                    <img class="tour-slider__img"
+                                        src="img/slide-2-360.4b1ec48cd8abdf20a1e595053743ee391.jpg.webp" width="742"
+                                        height="325" alt="2" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="tour-slider__slide swiper-slide">
+                                <a class="tour-slider__box" target="_blank">
+                                    <img class="tour-slider__img"
+                                        src="img/slide-3-360.4b1ec48cd8abdf20a1e595053743ee391.jpg.webp" width="742"
+                                        height="325" alt="3" loading="lazy">
+                                </a>
+                            </div>
+                        </div>
+                        <button class="nav-btn nav-btn--prev nav-btn--disabled" aria-hidden="true">
+                            <svg class="nav-btn__arr" xmlns="http://www.w3.org/2000/svg" width="28" height="47"
+                                viewBox="0 0 28 47">
+                                <path fill-rule="evenodd"
+                                    d="M27.5 2.8L25 .5a1.5 1.5 0 0 0-2.3 0L.6 22.5c-.3.2-.5.6-.5 1s.2.8.5 1.1l22.4 22a1.5 1.5 0 0 0 2.2 0l2.4-2.4c.3-.3.4-.7.4-1 0-.5-.1-.9-.4-1.2L8.6 23.5 27.5 5c.3-.3.4-.7.4-1 0-.5-.1-.8-.4-1.2z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button class="nav-btn nav-btn--next nav-btn--disabled" type="button" aria-hidden="true">
+                            <svg class="nav-btn__arr" xmlns="http://www.w3.org/2000/svg" width="28" height="47"
+                                viewBox="0 0 28 47">
+                                <path fill-rule="evenodd"
+                                    d="M27.5 22.4L5.2.4A1.5 1.5 0 0 0 3 .5L.6 2.9C.3 3.2 0 3.5 0 4c0 .4.2.8.5 1.1l18.8 18.5L.6 42c-.3.3-.5.7-.5 1.1 0 .4.2.8.5 1L3 46.6a1.5 1.5 0 0 0 2.2 0l22.3-21.9c.4-.3.5-.7.5-1 0-.5-.1-.9-.5-1.2z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="section__btn">
+                        <a class="btn">Смотреть 3D туры</a>
+                    </div>
+                </div>
+            </section>
+            <!-- end Section tour -->
+            <!-- Section about company -->
+            <section class="section-about-company section section--center section--gray" data-scroll>
+                <div class="container">
+                    <div class="section__heading">
+                        <h2 class="section-title">Познакомтесь с нашей компанией
+                            <span class="section-title__small">ближе!</span>
+                        </h2>
+                    </div>
+                    <div class="presentation">
+                        <div class="presentation__picture">
+                            <img src="img/picture1-min.png.webp" alt="Презентация" width="1000" height="305"
+                                loading="lazy">
+                        </div>
+                        <div class="presentation__title">
+                            <div class="presentation__title-left">
+                                <strong>Скачайте презентацию</strong>
+                                <br>строительной компании Аттика
+                            </div>
+                            <div class="presentation__title-center">
+                                <strong>и</strong>
+                            </div>
+                            <div class="presentation__title-right">
+                                <strong>Узнайте больше</strong> о
+                                <br>Европейских стандартах качества
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__btn">
+                        <a target="_blank" class="btn btn--light">Скачать
+                            презентацию</a>
+                        <a class="btn btn--border btn--light">Посмотреть сертификаты</a>
+                    </div>
+                </div>
+            </section>
+            <!-- end Section about company -->
+            <!-- Section news -->
+            <section class="section-news section section--center section--gray" data-scroll>
+                <div class="container">
+                    <div class="section__heading">
+                        <h2 class="section-title">Статьи о деревянных домах</h2>
+                    </div>
+                    <ul class="news-list">
+                        <li class="news-list__item">
+                            <div class="text-box">
+                                <a class="text-box__picture">
+                                    <div class="image-box image-box--t3">
+                                        <img src="img/image-388.683cf9dc7eaaefd13fca527e4c308f501.jpg.webp" width="377"
+                                            height="313" alt="Дома, от которых весь мир без ума" loading="lazy">
+                                    </div>
+                                    <span class="text-box__label">17.01.2022</span>
+                                </a>
+                                <h5 class="text-box__title">Дома, от которых весь мир без ума</h5>
+                                <p class="text-box__description">
+                                    Технология, подарившая миллионам семей уютный дом, уже известна более ста лет.
+                                    Маленький финский домик - прототип современного дома из клееного бруса. Впервые
+                                    такие стали изготавливать в Финляндии в 1920-х годах.
+                                </p>
+                                <div class="text-box__link">
+                                    <a class="link link--more btn btn--green">Подробнее</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="news-list__item">
+                            <div class="text-box">
+                                <a class="text-box__picture">
+                                    <div class="image-box image-box--t3">
+                                        <img src="img/brus.683cf9dc7eaaefd13fca527e4c308f501.jpg.webp" width="377"
+                                            height="313" alt="Экологичность домов из клееного бруса: мифы и реальность"
+                                            loading="lazy">
+                                    </div>
+                                    <span class="text-box__label">15.04.2021</span>
+                                </a>
+                                <h5 class="text-box__title">Экологичность домов из клееного бруса: мифы и реальность
+                                </h5>
+                                <p class="text-box__description">
+                                    Безопасен ли клеенный брус? На самом деле это выдумки компаний, строящих не из
+                                    клееного бруса.
+                                    Клеенный брус полностью безопасен и в более развитых странах потребители об этом
+                                    даже не беспокоятся.
+                                </p>
+                                <div class="text-box__link">
+                                    <a class="link link--more btn btn--green">Подробнее</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="news-list__item">
+                            <div class="text-box">
+                                <a class="text-box__picture">
+                                    <div class="image-box image-box--t3">
+                                        <img src="img/2.683cf9dc7eaaefd13fca527e4c308f501.jpg.webp" width="377"
+                                            height="313" alt="Мой дом – моя крепость" loading="lazy">
+                                    </div>
+                                    <span class="text-box__label">23.02.2021</span>
+                                </a>
+                                <h5 class="text-box__title">Мой дом – моя крепость</h5>
+                                <p class="text-box__description">
+                                    Последний год в Украине растёт спрос на загородные коттеджи, особенно на дома из
+                                    клееного бруса и мы решили разобраться в чём же причина такого скачка. Компания
+                                    «АТТИКА» — одна из первых, кто начал строить из данного материала, а также лидер по
+                                    качеству производства.
+                                </p>
+                                <div class="text-box__link">
+                                    <a class="link link--more btn btn--green">Подробнее</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="section__btn">
+                        <a class="btn">Все новости</a>
+                    </div>
+                </div>
+            </section>
+            <!-- end Section news -->
+
+            <!-- end Main -->
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__box row">
+            <div class="footer__col footer__col--about col-xs-12 col-lg-3">
+                <img class="footer__logo" src="/img/logo.png.webp" width="194" height="51"
+                    alt="Деревянные дома из клееного бруса – АТТИКА | Строительство деревянных домов под ключ в Киеве и Украине"
+                    loading="lazy">
+                <div class="footer__about">
+                    <p class="justifyfull">АТТИКА - это строительная компания с полным циклом производства
+                        домов. Мы являемся одним из самых больших производителей бруса, а также имеем в своём
+                        составе собственное архитектурное бюро.</p>
+                    <p class="justifyfull">Мы придерживаемся тенденций современной архитектуры, поддерживаем её
+                        развитие и заботимся об экологии в производстве и реализации наших проектов.</p>
+                </div>
+            </div>
+            <div class="footer__col footer__col--catalog col-xs-12 col-tb-6 col-lp-4 col-lg-3">
+                <h6 class="footer-heading">Каталог проектов</h6>
+                <ul class="footer-list" id="footer-menu-1">
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="proektyi/derevyannyie-kottedzhi/">
+                            Деревянные коттеджи
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="proektyi/doma-iz-kleenogo-brusa/">
+                            Дома из клееного бруса
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="proektyi/dachnyie-doma/">
+                            Дачные дома
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="proektyi/derevyannyie-bani/">
+                            Деревянные бани
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="proektyi/sadovyie-domiki,-besedki/">
+                            Садовые домики, беседки
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="proektyi/kommercheskie-proektyi/">
+                            Коммерческие проекты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--company col-xs-12 col-tb-6 col-lp-4 col-lg-3">
+                <h6 class="footer-heading">О компании</h6>
+                <ul class="footer-list" id="footer-menu-2">
+                    <li class="footer-list__item"><a class="footer-list__link" href="about/o-kompanii">О
+                            компании</a></li>
+
+                    <li class="footer-list__item"><a class="footer-list__link"
+                            href="about/sobstvennoe-proizvodstvo">Наше производство</a></li>
+
+                    <li class="footer-list__item"><a class="footer-list__link" href="about/partneram">Партнерам</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="pdf/1-presentation-attika-ru.pdf"
+                            target="_blank">Презентация</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="about/vakansii">Вакансии</a></li>
+
+                    <li class="footer-list__item"><a class="footer-list__link" href="about/advantages">Преимущества</a>
+                    </li>
+                </ul>
+                <ul class="footer-list" id="footer-menu-2">
+                    <li class="footer-list__item"><a class="footer-list__link" href="privacy">Конфиденциальность</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--contact col-xs-12 col-lp-4 col-lg-3">
+                <h6 class="footer-heading">Контакты</h6>
+                <div class="contact">
+                    <div class="contact__box">
+                        <!--  <a class="contact__link" href="tel:+38 (044) 369 36 00">+38 (044) 369 36 00</a> <a class="contact__link" href="tel:+38 (073) 369 36 00">+38 (073) 369 36 00</a> -->
+                        <!-- <a class="contact__link ph-phone1" href="tel:+380733693600">+38 (073) 369-36-00</a> -->
+                        <!-- <a class="contact__link" href="tel:+380443693600">+38 (044) 369-36-00</a> -->
+                        <a class="contact__link" href="tel:+380680110144">+38 (068) 011-01-44</a>
+                        <a class="contact__link" style="text-decoration:underline"
+                            href="mailto:sale@attika.ua">sale@attika.ua</a>
+                    </div>
+                    <p style="font-size: 1em; color: #cfe828; margin-bottom: -5px;">ОТДЕЛ ПРОДАЖ&nbsp;</p>
+                    <p style="font-size: 12px; color: #fff; margin-bottom: 0px;">г. Киев,</p>
+                    <p style="font-size: 12px; margin-top: 0px;">ул. Радистов, 34В&nbsp;&nbsp;<br> заезд со
+                        стороны ул. Исы Мунаева&nbsp;</p>
+                    <p style="font-size: 1em; color: #cfe828; margin-bottom: -5px;">ПРОИЗВОДСТВО</p>
+                    <p style="font-size: 12px; color: #fff; margin-bottom: 0px;">г. Иванков, Киевская область,
+                    </p>
+                    <p style="font-size: 12px; margin-top: 0px;">ул. Михайловская 12Б</p>
+                </div>
+            </div>
+            <div class="footer__col footer__col--social col-xs-12 col-lp-4 col-lg-3">
+                <!-- social -->
+                <ul class="social">
+                    <!-- facebook -->
+                    <li class="social__item">
+                        <a class="social__link" rel="nofollow" target="_blank"
+                            href="https://www.facebook.com/AttikaStyle/" aria-label="facebook">
+                            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98">
+                                <path
+                                    d="M49 0a49 49 0 1 0 0 98 49 49 0 0 0 0-98zm19 25h-7c-6 0-7 2-7 6v8h13v13H54v33H41V52H30V39h11v-9c0-11 7-17 17-17h10v12z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- instagram -->
+                    <li class="social__item">
+                        <a class="social__link" rel="nofollow" target="_blank"
+                            href="https://www.instagram.com/attika_ua/" aria-label="instagram">
+                            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98">
+                                <path
+                                    d="M71 50c0 11-10 21-22 21S27 61 27 50v-7h-6v31c0 1 1 3 3 3h50l3-3V43h-7l1 7zM65 35h8c2 0 4-1 4-3v-8c0-2-2-3-4-3h-8c-1 0-3 1-3 3v8c0 2 2 3 3 3z">
+                                </path>
+                                <path
+                                    d="M49 0a49 49 0 1 0 0 98 49 49 0 0 0 0-98zm27 85H22c-5 0-9-4-9-9V22c0-5 4-9 9-9h54c5 0 9 4 9 9v54c0 5-4 9-9 9z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- youtube -->
+                    <li class="social__item">
+                        <a class="social__link" rel="nofollow" target="_blank"
+                            href="https://www.youtube.com/channel/UCEsc9zkRnuzRJ9R2-Ezf5bA" aria-label="youtube">
+                            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98">
+                                <path
+                                    d="M26 52h4v21h3V52h4v-3H26zM57 55l-4 2v-8h-3v24h3v-1l4 2 2-2 1-4v-7l-1-4-2-2zm-1 13l-1 3-2-1V59l2-1 1 2v8zM44 69l-2 2-1-1V55h-3v17l2 2 4-3v2h3V55h-3v14zM47 38l1-2v-8l-1-2c-1 0-2 0-2 2v8c0 2 1 2 2 2z">
+                                </path>
+                                <path
+                                    d="M49 0a49 49 0 1 0 0 98 49 49 0 0 0 0-98zm5 23h4v15l3-1V23h3v18h-3v-2l-4 2-2-1-1-3V23zm-12 6l1-4c1-2 2-2 4-2 1 0 3 0 4 2l1 4v6l-1 5-4 1-4-1-1-5v-6zm-9-12l2 9 3-9h4l-5 14v10h-3V31l-3-8-2-6h4zm42 58c0 3-3 5-6 5l-20 1-21-1c-2 0-5-2-5-5l-1-13 1-13c0-3 3-5 5-5l21-1 20 1c3 0 6 2 6 5l1 13-1 13z">
+                                </path>
+                                <path
+                                    d="M67 55l-4 2-1 4v7l1 4 4 2a5 5 0 0 0 5-4v-3h-3v2l-2 2c-1 0-2-1-2-3v-3h7v-4l-1-4-4-2zm2 7h-4v-1c0-2 1-3 2-3s2 1 2 3v1z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- twitter -->
+                    <!-- <li class="social__item">
+                <a class="social__link" rel="nofollow" target="_blank" href="https://twitter.com/attika777" aria-label="twitter">
+                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98">
+                        <path d="M49 0a49 49 0 1 0 0 98 49 49 0 0 0 0-98zm29 36v2c0 20-15 42-42 42-8 0-16-2-23-7a30 30 0 0 0 21-6c-6 0-11-4-13-10v-1h5c-6-2-10-7-10-14v-1l6 2a15 15 0 0 1-4-19v-1l1 1c7 9 18 14 29 15v-3a15 15 0 0 1 26-11l9-3h1c-1 3-3 6-6 8l7-2h1l-8 8z"
+                        /> </svg>
+                </a>
+            </li> -->
+                    <!-- linkedin -->
+                    <li class="social__item">
+                        <a class="social__link" rel="nofollow" target="_blank"
+                            href="https://www.linkedin.com/company/аттіка/" aria-label="linkedin">
+                            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98">
+                                <path
+                                    d="M49 0a49 49 0 1 0 0 98 49 49 0 0 0 0-98zM31 82H17V38h14v44zm-7-50a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm58 50H68V60c0-5 0-11-7-11s-8 5-8 11v22H39V38h13v6h1c1-4 6-7 13-7 13 0 16 9 16 21v24z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <!-- end social -->
+            </div>
+            <div class="footer__col footer__col--copyright col-xs-12 col-lp-8 col-lg-9">
+                <span class="footer__copyright">Компания "ATTИKA". Все права защищены © 2023</span>
+            </div>
+        </div>
+    </div>
+</footer>
+        <!-- end Footer -->
+    </div>
+    <script src="js/jquery-3.4.1.min.js?_v=20230205190007"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $('#menu>.menu__item').find('.menu__submenu--lvl1').each( function(){
+                $(this).find('.menu__item').find('.menu__submenu--lvl1').addClass('menu__submenu--lvl2').removeClass('menu__submenu--lvl1');
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        (function (w, d, u) {
+            var s = d.createElement('script'); s.async = true; s.src = u + '?' + (Date.now() / 60000 | 0);
+            var h = d.getElementsByTagName('script')[0]; h.parentNode.insertBefore(s, h);
+        })(window, document, 'https://work.attika.ua/upload/crm/site_button/loader_2_21npxv.js');
+    </script>
+
+    <script defer src="js/global.min.js?_v=20230205190007"></script>
+    <script defer src="js/scroll-trigger.min.js?_v=20230205190007"></script>
+    <script defer src="js/swiper.min.js?_v=20230205190007"></script>
+    <script defer src="js/rellax.min.js?_v=20230205190007"></script>
+    <script defer src="js/smooth-scroll.min.js?_v=20230205190007"></script>
+    <script defer src="js/index.min.js?_v=20230205190007"></script>
+    <script type="text/javascript">
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        if (width <= 1024)
+        {
+            document.querySelector('.map-slide__img img').classList.remove('js-section-parallax');
+        }
+
+        //находим элемент more и заносим его в переменную
+        let more = document.querySelectorAll('.reviews-slider__more');
+        //создание цикла for
+        for(let i=0;i<more.length;i++){
+        //при клике по кнопке запускается функция добавляющая и убирающая активный класс
+            more[i].addEventListener("click",function(){
+                more[i].parentNode.classList.toggle("open-more");
+            })
+        }
+    </script>
+    <script type="text/javascript">
+       document.getElementById("WebForm").addEventListener("submit", function(event){
+        	var form = document.forms.Home;
+        	var formData = new FormData(form);
+        	
+        	// utm 
+            let utm = JSON.parse(localStorage.getItem('ct_utm')).utm;
+            for (let key in utm) {
+                if (!['source', 'medium', 'campaign', 'content', 'term'].includes(key)) {
+                    continue;
+                } 
+                
+                formData.append('utm_' + key, utm[key]);
+            }
+        	
+        	var xhr = new XMLHttpRequest();
+            var index = ["attika.ua/notifications/bitrix_lead.php"];
+            for (var i = 0; i < index.length; i++) {
+                var urle = "https://"+index[i];
+            	var xhr = new XMLHttpRequest();
+            	xhr.open("POST",urle);
+            	xhr.onreadystatechange = function() {
+            		if (xhr.readyState == 4) {
+    	        		if(xhr.status == 200) {
+            				var data = xhr.responseText;
+            				if(data == "true") {
+        	    			} else {
+        				    	form.reset();
+        				    	document.querySelector('.form-question__success').style.display = 'block';
+        				    }
+        			    }
+        		    }
+        	    };
+       	        xhr.send(formData);
+            }
+            event.preventDefault();     
+       });
+    </script>
+    <script src="js/rocket-loader.min.js?_v=20230205190007" data-cf-settings="" defer=""></script>
+</body>
+
+</html>

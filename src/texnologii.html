@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head-texnologii.html', {
+"title": "Технологии"
+})
+
+<body class="inner-page">
+    <div class="wrapper">
+        <!-- Header -->
+        @@include('./html/base/header.html')
+        <!-- end Header -->
+
+        <div class="top-panel">
+            <picture class="top-panel__img js-top-panel-parallax">
+                <img src="@img/CAM_001_2.69bd469d8840b16a476d6a20334faeff7.jpg.webp" alt="" srcset="@img/CAM_001_2.69bd469d8840b16a476d6a20334faeff7.jpg.webp 1920w 
+                             @img/CAM_001_2.69bd469d8840b16a476d6a20334faeff7.jpg.webp 1024w
+                             @img/CAM_001_2.9193297ca352a70b0e5d1b8791c539eb7.jpg 768w">
+            </picture>
+
+
+            <div class="top-panel__box container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+                        <li class="breadcrumbs__item"><a href="texnologii/"
+                                class="breadcrumbs__link active">Технологии</a></li>
+                    </ol>
+
+                </nav>
+            </div>
+        </div>
+
+        <!-- main -->
+        <main class="main">
+
+            <div class="container">
+
+                <h1 class="section-title section-title--left">Технологии</h1>
+                <div class="text-block">
+                    <h6></h6>
+                </div>
+                <div class="services-blocks tiles">
+                    <!--<h2 class="services-blocks__title">Дома из клееного бруса</h2>-->
+                    <a href="texnologii/doma-iz-kleenogo-brusa" class="services-blocks__item">
+                        <div class="services-blocks__content">
+                            <h3 class="services-blocks__longtitle">Дома из клееного бруса
+                                <!--Строительство деревянных домов из клееного бруса-->
+                            </h3>
+                            <!--<p class="services-blocks__description">Настоящий дом из клееного бруса от компании АТТИКА – это современный деревянный дом, в котором сочетаются экологичность, надежность и комфорт.</p>
+        <a href="texnologii/doma-iz-kleenogo-brusa" class="services-blocks__btn btn">Подробнее</a>
+        -->
+                            <nav class="innerServices">
+
+                            </nav>
+                        </div>
+                        <div class="services-blocks__img">
+                            <img src="@img/dom-kleenui-brus12.52d20d9ed46af51d383e113bb4c98d677.jpg.webp"
+                                alt="Строительство деревянных домов из клееного бруса" width="590" height="350"
+                                loading="lazy">
+                        </div>
+                    </a>
+                    <!--<h2 class="services-blocks__title">Фахверковые дома</h2>-->
+                    <a href="texnologii/faxverkovyie-doma" class="services-blocks__item">
+                        <div class="services-blocks__content">
+                            <h3 class="services-blocks__longtitle">Фахверковые дома
+                                <!--Строительство фахверковых домов-->
+                            </h3>
+                            <!--<p class="services-blocks__description">Фахверковый современный дом – представляет собой экологичный дом с открытыми планировками жилых помещений и панорамным остеклением.</p>
+        <a href="texnologii/faxverkovyie-doma" class="services-blocks__btn btn">Подробнее</a>
+        -->
+                            <nav class="innerServices">
+
+                            </nav>
+                        </div>
+                        <div class="services-blocks__img">
+                            <img src="@img/faxverk111.52d20d9ed46af51d383e113bb4c98d677.jpg.webp"
+                                alt="Строительство фахверковых домов" width="590" height="350" loading="lazy">
+                        </div>
+                    </a>
+                    <!--<h2 class="services-blocks__title">Дома по каркасной технологии</h2>-->
+                    <a href="texnologii/doma-po-karkasnoj-texnologii" class="services-blocks__item">
+                        <div class="services-blocks__content">
+                            <h3 class="services-blocks__longtitle">Дома по каркасной технологии
+                                <!--Энергосберегающие каркасные дома, строительство по каркасной технологии-->
+                            </h3>
+                            <!--<p class="services-blocks__description">Деревянные дома, которые построены по каркасной технологии нашей компанией не только имеют прекрасный вид, но и очень энергоэффективны.
+</p>
+        <a href="texnologii/doma-po-karkasnoj-texnologii" class="services-blocks__btn btn">Подробнее</a>
+        -->
+                            <nav class="innerServices">
+
+                            </nav>
+                        </div>
+                        <div class="services-blocks__img">
+                            <img src="@img/karkasnui-dom2.52d20d9ed46af51d383e113bb4c98d677.jpg.webp"
+                                alt="Энергосберегающие каркасные дома, строительство по каркасной технологии"
+                                width="590" height="350" loading="lazy">
+                        </div>
+                    </a>
+                </div>
+                <div class="section__btn container">
+                    <a class="btn" href="proektyi/">Выбрать проект дома</a>
+                    <a class="btn btn--green" href="galereya/">Cмотреть галерею</a>
+                </div>
+            </div>
+
+        </main>
+        <!-- end main -->
+        <!-- Footer -->
+        @@include('./html/base/footer.html')
+        <!-- end Footer -->
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#menu>.menu__item').find('.menu__submenu--lvl1').each(function () {
+                $(this).find('.menu__item').find('.menu__submenu--lvl1').addClass('menu__submenu--lvl2').removeClass('menu__submenu--lvl1');
+            });
+        });
+    </script>
+    <script defer src="js/global.min.js"></script>
+    <script src="js/rocket-loader.min.js" data-cf-settings="" defer=""></script>
+</body>
+
+</html>
