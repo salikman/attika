@@ -4483,3 +4483,14 @@ header.header > .body > .nav-mobile > .header__nav .menu__item > .menu__submenu 
     width: 80%;
   }
 }
+.prj-info__btns button {
+  width: 100% !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
+
+#prjMainGallery img {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
